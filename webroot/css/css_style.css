@@ -1,0 +1,880 @@
+@charset "utf-8";
+/****************************************************************共用元素*/
+
+/*圖檔
+html tag要用：
+<div class="img-s float-l"><span></span><a href="member_profile.html" title="瀏覽作者個人檔案"><img src="images/head_s.png" alt="member profile" /></a></div>
+
+*/
+
+/*縮圖樣式- 程式縮至最大邊50px以內*/
+div.img-s {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+div.img-s img {
+    border: none;
+    max-width: 50px;
+    max-height: 50px;
+}
+div.img-s.float-l {
+    margin-right: 5px;
+}
+div.img-s.float-r {
+    margin-left: 5px;
+}
+/*中圖樣式- 用大圖但CSS縮放至200px以內*/
+div.img-m {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+}
+div.img-m img {
+    border: none;
+    max-width: 200px;
+    max-height: 200px;
+}
+/*大圖樣式- 程式縮至最大邊300px以內*/
+div.img-l {
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+}
+div.img-l img {
+    border: none;
+    max-width: 300px;
+    max-height: 300px;
+}
+/*縮圖&大圖水平置中*/
+div.img-s, div.img-m, div.img-l {
+    overflow: hidden;
+    text-align: center;
+}
+
+.textBoxXS {
+    width: 60px;
+}
+.textBoxS {
+    width: 120px;
+}
+.textBoxM {
+    width: 200px;
+}
+.textBoxL {
+    width: 500px;
+}
+
+.textBox_XS { /*超短文字欄位*/
+    width: 30px;
+}
+.textBox_S { /*短文字欄位*/
+    width: 30%;
+}
+.textBox_M { /*中文字欄位*/
+    width: 50%;
+}
+.textBox_L { /*長文字欄位*/
+    width: 70%;
+}
+.textBox_XL { /*超長文字欄位*/
+    width: 100%;
+}
+
+.form1 { /*灰底表單*/
+    background: #DDD;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+}
+.form1 p {
+    clear: both;
+    margin: 10px 0px;
+}
+.form1 label, .form1 .form_title {
+    width: 40px;
+    display: block;
+    float: left;
+}
+.form1 input[type="text"], .form1 textarea, .form1 .form_content {
+    border: none;
+    width: 230px;
+    padding: 3px 5px;
+    background: #FFF;
+    display: inline-block;
+}
+
+iframe#verifybox { /*驗證碼*/
+    width: 95px;
+    height: 22px;
+    float: left;
+    border: none;
+    margin-right: 5px;
+    background: #CCC;
+}
+
+/****************************************************************共用效果*/
+
+/*對齊樣式*/
+.clear-b {
+    clear: both;
+}
+.float-l {
+    float: left;
+}
+.float-r {
+    float: right;
+}
+.float-c {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+p.clear-b {
+    clear: both;
+    height: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*分隔線*/
+p.line {
+    padding: 10px;
+    margin: 0px;
+}
+hr.line {
+    padding: 0px 0px 20px 0px;
+    margin: 0px 10px;
+    height: 10px;
+    border: none;
+    background: url(images/line1.png) repeat-x left center;
+}
+
+/*項目標題*/
+div.title1 { /*四字項目+內容*/
+    line-height: 22px;
+    overflow: hidden;
+    border-bottom: 3px solid #333;
+    background: url(images/icons.png) no-repeat -210px 0px;
+}
+div.title1 h2 {
+    color: #FFF;
+    font-size: 15px;
+    padding: 0px 15px 0px 5px;
+    margin: 0px;
+    display: block;
+    float: left;
+}
+div.title1 h2:before {
+    display: none;
+}
+div.front_box_title {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 0px 15px 0px 5px;
+    margin: 0px;
+    display: block;
+    float: left;
+}
+div.title1 p {
+    margin: 0px;
+    font-weight: bold;
+}
+div.title1 a:hover {
+    text-decoration: none;
+}
+div.title2 { /*主單元分類圖標標題*/
+    position: relative;
+    margin: 5px 0px;
+    line-height: 30px;
+    border-bottom: 1px solid #C8C8C8;
+}
+div.title2 h2.spot {
+    line-height: 30px;
+    font-size: 15px;
+    color: #A93127;
+}
+h2.title {
+    font-size: medium;
+    margin: 5px 0px;
+}
+h2.title:before {
+    content: ' ';
+    display: block;
+    float: left;
+    margin: 5px 3px 0px 0px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 9px solid #D00;
+    border-bottom: 8px solid transparent;
+}
+h3.title {
+    font-size: 11pt;
+    margin: 5px 0px;
+}
+h4.title {
+    font-weight: normal;
+    font-size: 10pt;
+}
+
+/*項目清單*/
+div.list1 { /*DIV的項目清單*/
+    font-size: 14px;
+}
+div.list1 .btn {
+    margin-top: 5px;
+    font-size: 13px;
+    letter-spacing: normal;
+}
+div.list1 ul {
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+    list-style: none;
+    line-height: 35px;
+    display: block;
+    float: left;
+}
+div.list1 ul li {
+    clear: both;
+    width: 100%;
+    background-image: url(images/line3.png);
+}
+div.list1 ul li .table_td1, div.list1 ul li .table_td2 {
+    font-weight: bold;
+}
+
+div.list2 { /*仿信紙模式*/
+    font-size: 18px;
+    line-height: 30px;
+}
+div.list2 h2:before {
+    content: ' ';
+    display: block;
+    float: left;
+    width: 30px;
+    height: 38px;
+    margin-right: 5px;
+    text-indent: -500px;
+    overflow: hidden;
+    position: relative;
+    top: -5px;
+    background: url(images/icons.png) no-repeat -210px -70px;
+}
+div.list2 h2 {
+    font-size: 24px;
+    padding: 0px;
+    margin: 0px;
+}
+div.list2 > ol {
+    padding: 0px;
+    margin: 10px 0px;
+}
+div.list2 > ol > li {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    list-style-position: inside;
+    background: url(images/line5.png) repeat-x left top;
+}
+div.list2 > ol > li > ul, div.list2 > ol > li > ol {
+    list-style-position: outside;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+div.list2 p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+div.list2 a {
+    color: #C00;
+}
+div.list2 a:hover {
+    text-decoration: underline;
+}
+div.list2 img.float-l {
+    margin: 2px 10px 10px 0px;
+}
+div.list2 img.float-r {
+    margin: 2px 0px 10px 10px;
+}
+
+dl.list1 { /*Tab中佔2/3空間的List*/
+}
+dl.list1 dt {
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+dl.list1 dd {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #C8C8C8;
+}
+dl.list1 dd p {
+    margin: 0px;
+    line-height: 22px;
+}
+dl.list1 dd .fields_4 {
+    width: 220px;
+    padding: 5px;
+    margin: 5px 5px 0px 0px;
+    line-height: 22px;
+    border: 1px solid #C8C8C8;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+}
+dl.list2 { /*相關資訊右上角Tab中的list*/
+}
+dl.list2 dt {
+    font-weight: bold;
+}
+dl.list3 { /*Tab中佔滿版空間的List*/
+    width: 100%;
+    margin-bottom: 15px;
+}
+dl.list3 dt {
+    width: 20px;
+    line-height: 16px;
+    text-align: center;
+    padding: 5px;
+    background: #E6E6E6;
+    border: 1px solid #C8C8C8;
+}
+dl.list3 dt .btn {
+    float: none;
+    margin: 5px auto;
+}
+dl.list3 dd {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #C8C8C8;
+    border-left: none;
+}
+dl.list3 dd h4 {
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+dl.list3 dd .btn3 {
+    padding: 0px 5px;
+}
+dl.list3 dd .fields_2, dl.list3 dd .fields_3, dl.list3 dd .fields_4 {
+    min-width: 240px;
+}
+dl.list3 dd .fields_2 {
+    padding: 5px 0px;
+}
+dl.list3 dd .table_td_15p {
+    width: 70px;
+    min-width: 70px;
+    vertical-align: top;
+}
+dl.list3 dd .table_td_85p {
+    width: auto;
+    min-width: 200px;
+}
+dl.list3 dd .table_td_35p {
+    width: auto;
+}
+dl.list3 dd ul.list3 li:first-child {
+    border: none;
+}
+dl.list4 { /*編輯介面的list*/
+    border: 1px solid #C8C8C8;
+    border-top: none;
+}
+dl.list4 dt {
+    padding: 5px 15px;
+    border-top: 1px solid #C8C8C8;
+}
+dl.list4 dt {
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+dl.list4 ul.list1 li {
+    margin: 3px 0px 0px 10px;
+}
+dl.list4 dd .line {
+    padding: 10px 15px;
+    border-top: 1px solid #DFDFDF;
+}
+dl.list4 dd .fields_4.dTable {
+    min-width: inherit;
+}
+
+/*UL的項目清單*/
+ul.list1 { /*相關資訊列表*/
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+ul.list1 li {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+ul.list2 { /*Tab中擬表格列表*/
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border: 1px solid #C8C8C8;
+    border-top-width: 2px;
+    border-rithg-width: 2px;
+}
+#TabBox2_contentbox > div > ul.list2 > li:hover {
+    background: #EEE;
+}
+#TabBox2_contentbox > div > ul.list2 > li div.table_td1 {
+    width: 88px;
+}
+#TabBox2_contentbox > div > ul.list2 > li div.bg_gary1 a {
+    text-decoration: underline;
+}
+#TabBox2_contentbox > div > ul.list2 > li div.bg_gary1 a:hover {
+    color: #000;
+}
+ul.list2 > li {
+    width: 100%;
+    border-right: 1px solid #C8C8C8;
+    border-bottom: 1px solid #C8C8C8;
+}
+ul.list2 > li > div {
+    padding: 5px;
+    border-left: 1px solid #C8C8C8;
+}
+ul.list2 > li > div.table_td_5p {
+    width: 25px;
+}
+ul.list2 > li > div.table_td_10p {
+    width: 50px;
+}
+ul.list2 .table_td_10p ul.list1 li {
+    margin-right: 5px;
+}
+ul.list2 > li > div.table_td_15p {
+    min-width: 40px;
+}
+ul.list2 > li .olcSprite, ul.list2 > li .category {
+    float: none;
+    margin: 0px auto;
+}
+ul.list2 ul.list3 li:first-child {
+    border-top: none;
+}
+ul.list3 { /*編輯介面的清單*/
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+ul.list3 li {
+    min-width: 270px;
+    padding: 10px 15px;
+    border-top: 1px solid #DFDFDF;
+}
+dl.list3 ul.list3 li {
+    min-width: 230px;
+    padding: 10px 5px;
+}
+ul.list3 li .table_td_15p {
+    width: 70px;
+    min-width: 70px;
+    vertical-align: top;
+}
+ul.list3 li .table_td_85p {
+    width: auto;
+    min-width: 200px;
+}
+ul.list3 li .table_td_35p {
+    width: auto;
+}
+dl.list3 ul.list3 li .table_td_85p {
+    width: auto;
+    min-width: 150px;
+}
+dl.list3 ul.list3 li .table_td_35p {
+    width: auto;
+}
+ul.list3 li.fields_3.dTable {
+    min-width: 300px;
+}
+dl.list3 ul.list3 li.fields_3.dTable {
+    min-width: 200px;
+}
+ul.list3 li .table_td_5p {
+    min-width: 30px;
+}
+ul.list3 li p {
+    margin-top: 0px;
+}
+ul.list3 li .icon {
+    font-size: inherit;
+}
+ul.list3 li select.float-l, ul.list3 li input.float-l, ul.list3 li textarea.float-l {
+    margin-right: 5px;
+}
+/*地圖*/
+.map {
+    height: 220px;
+    padding: 1px 4px 4px 4px;
+    background: #333;
+}
+
+/*作者*/
+.author_box {
+    margin-top: 10px;
+}
+
+/*星等*/
+.spot_stars {
+    margin-top: 3px;
+}
+.spot_stars img {
+    margin-right: 1px;
+}
+.spot_stars.float-l {
+    margin-right: 5px;
+}
+.spot_stars.float-r {
+    margin-left: 5px;
+}
+
+/*篩選器區塊*/
+.selecter {
+    margin: 10px 0px;
+    line-height: 35px;
+}
+.selecter ul.list1 li {
+    margin: 0px 0px 0px 10px;
+}
+/**************************************************************擬元素*/
+.overspots { /*單行文字超出範圍點點點*/
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/*指定標籤自動編號*/
+body {
+    counter-reset: counter_title; /*計數器命名並重置*/
+    background-color: #f7f7f7;
+}
+.counter1:before { /*在有設定樣式為counter1的標題前面加上項目(=List)和編號(從1開始自動編號)*/
+    counter-increment: counter_title 1;
+    content: "List "counter(counter_title)" : ";
+}
+
+/*顏色與大小樣式*/
+.color1a {
+    color: #454545;
+}
+.color1b {
+    color: #B3B3B3;
+}
+.color1c {
+    color: #E2E2E2;
+}
+.color2a {
+    color: #A52C25;
+}
+.color2b {
+    color: #FF766A;
+}
+.color2c {
+    color: #FFB0AA;
+}
+.color3a {
+    color: #3B5998;
+}
+.color3b {
+    color: #768BB8;
+}
+.color3c {
+    color: #CED5E5;
+}
+.txt_S {
+    font-size: 12px;
+    letter-spacing: normal;
+}
+.txt_M {
+    font-size: medium;
+}
+.txt_L {
+    font-size: large;
+}
+.txt_N {
+    font-size: 13px;
+}
+.txt_delete {
+    color:#999999;
+    text-decoration: line-through;
+}
+.mark_txt {
+    color: #AA0000;
+}
+.mark_bg {
+    background-color: #FFEEEE;
+}
+
+/*陰影&光暈*/
+.shadow-text1 {
+    text-shadow: -1px -1px 1px #FFF;
+}
+.shadow-text2 {
+    text-shadow: -1px -1px 1px #FFF, -1px 1px 1px #FFF, 0px 1px -1px #FFF, 1px 1px 1px #FFF ;
+}
+.shadow-box1 {/*內陰影*/
+    -webkit-box-shadow: inset #CCC 2px 2px 3px;
+    -moz-box-shadow: inset #CCC 2px 2px 3px;
+    box-shadow: inset #CCC 2px 2px 3px;
+}
+.shadow-box2 {
+    -webkit-box-shadow: #999 2px 2px 5px;
+    -moz-box-shadow: #999 2px 2px 5px;
+    box-shadow: #999 2px 2px 5px;
+}
+.block.fillet_all.shadow-box2 {
+    padding: 14px;
+    border: 1px solid #C8C8C8;
+}
+.block.fillet_all.shadow-box2 hr {
+    border: none;
+    border-bottom: 1px solid #C8C8C8;
+    margin: 15px 0px;
+}
+
+/*圓矩形*/
+.fillet_all {
+    border-radius: 6px; /* Opera 10.5+, IE9 */
+    -moz-border-radius: 6px; /* Firefox */
+    -webkit-border-radius: 6px; /* Safari 和 Chrome */
+}
+.fillet_top {
+    border-radius: 8px 8px 0px 0px; /* Opera 10.5+, IE9 */
+    -moz-border-radius: 8px 8px 0px 0px; /* Firefox */
+    -webkit-border-radius: 8px 8px 0px 0px; /* Safari 和 Chrome */
+}
+.fillet_right {
+    border-radius: 0px 8px 8px 0px; /* Opera 10.5+, IE9 */
+    -moz-border-radius: 0px 8px 8px 0px; /* Firefox */
+    -webkit-border-radius: 0px 8px 8px 0px; /* Safari 和 Chrome */
+}
+.fillet_rt {
+    border-radius: 0px 8px 0px 0px; /* Opera 10.5+, IE9 */
+    -moz-border-radius: 0px 8px 0px 0px; /* Firefox */
+    -webkit-border-radius: 0px 8px 0px 0px; /* Safari 和 Chrome */
+}
+
+.fillet_bottom {
+    border-radius: 0px 0px 8px 8px; /* Opera 10.5+, IE9 */
+    -moz-border-radius: 0px 0px 8px 8px; /* Firefox */
+    -webkit-border-radius: 0px 0px 8px 8px; /* Safari 和 Chrome */
+}
+.fillet_left {
+    border-radius: 8px 0px 0px 8px; /* Opera 10.5+, IE9 */
+    -moz-border-radius: 8px 0px 0px 8px; /* Firefox */
+    -webkit-border-radius: 8px 0px 0px 8px; /* Safari 和 Chrome */
+}
+.fillet_lt {
+    border-radius: 8px 0px 0px 0px; /* Opera 10.5+, IE9 */
+    -moz-border-radius: 8px 0px 0px 0px; /* Firefox */
+    -webkit-border-radius: 8px 0px 0px 0px; /* Safari 和 Chrome */
+}
+
+/*漸層色*/
+.bg_gary1 {
+    background: #ededed; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f0f0f0 50%, #ededed 51%, #efefef 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f0f0f0), color-stop(51%,#ededed), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f0f0f0 50%,#ededed 51%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#f0f0f0 50%,#ededed 51%,#efefef 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f0f0f0 50%,#ededed 51%,#efefef 100%); /* IE10+ */
+    background: linear-gradient(top,  #ffffff 0%,#f0f0f0 50%,#ededed 51%,#efefef 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+}
+.bg_gary2 {
+    background: #7d7e7d; /* Old browsers */
+    background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+    background: linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+}
+.bg_red1 {
+    background: #fccfcf; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fccfcf 0%, #fcf4f4 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fccfcf), color-stop(100%,#fcf4f4)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fccfcf 0%,#fcf4f4 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fccfcf 0%,#fcf4f4 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fccfcf 0%,#fcf4f4 100%); /* IE10+ */
+    background: linear-gradient(top,  #fccfcf 0%,#fcf4f4 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fccfcf', endColorstr='#fcf4f4',GradientType=0 ); /* IE6-9 */
+}
+
+/****************************************************************內容結構*/
+
+/*block*/
+.block {
+    margin: 10px;
+}
+.block_ntb {
+    margin: 0px 10px;
+}
+.block_nrl {
+    margin: 10px 0px;
+}
+
+/*div擬表格*/
+.dTable {
+    display: table;
+    position : relative;
+}
+.table-cell {
+    display: table-cell;
+    vertical-align: top;
+}
+.table-cell_center { /*水平置中格內元素*/
+    display: table-cell;
+    text-align: center;
+}
+.table-cell_middle { /*垂直置中格內元素*/
+    display : table-cell;
+    vertical-align : middle;
+    *display : block;
+    *position : absolute;
+    *top : expression(this.parentElement.clientHeight / 2 - this.clientHeight / 2);
+    *width : 100%;
+}
+.table_td1 {
+    width: 85px;
+}
+.table_td2 {
+    width: 50px;
+}
+.table_td_5p {
+    width: 5%;
+}
+.table_td_10p {
+    width: 10%;
+}
+.table_td_15p {
+    width: 15%;
+}
+.table_td_20p {
+    width: 20%;
+}
+.table_td_25p {
+    width: 25%;
+}
+.table_td_30p {
+    width: 30%;
+}
+.table_td_35p {
+    width: 35%;
+}
+.table_td_40p {
+    width: 40%;
+}
+.table_td_45p {
+    width: 45%;
+}
+.table_td_50p {
+    width: 50%;
+}
+.table_td_55p {
+    width: 55%;
+}
+.table_td_60p {
+    width: 60%;
+}
+.table_td_65p {
+    width: 65%;
+}
+.table_td_70p {
+    width: 70%;
+}
+.table_td_75p {
+    width: 75%;
+}
+.table_td_80p {
+    width: 80%;
+}
+.table_td_85p {
+    width: 85%;
+}
+.table_td_90p {
+    width: 90%;
+}
+.table_td_95p {
+    width: 95%;
+}
+.table_td_100p {
+    width: 100%;
+}
+/*div百分比*/
+.fields_1, .fields_2, .fields_3, .fields_3s, .fields_4, .fields_5, .fields_s, .fields_c, .fields_xs, .fields_xl {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+}
+.fields_1 { /*1等分*/
+    width: 100%;
+}
+.fields_2 { /*2等分*/
+    width: 50%;
+}
+.fields_3 { /*3等分*/
+    width: 33%;
+}
+.fields_4 { /*4等分*/
+    width: 25%;
+}
+.fields_5 { /*5等分*/
+    width: 20%;
+}
+.fields_s { /*sidebar*/
+    width: 300px;
+}
+.fields_c { /*content*/
+    display: block;
+    width: 66%;
+    min-width: 300px;
+    float: right;
+}
+#Header > .block > .fields_s, #Header > .block > .fields_c { /*首頁特例CSS*/
+    margin-top: 10px;
+}
+.fields_s .img-l {
+    height: 250px;
+    line-height: 250px;
+}
+
+div.error-message {
+    font-size: 14px;
+    color: #900;
+    font-weight: bold;
+}
+
+div.message {
+    clear: both;
+    color: #900;
+    font-size: 140%;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+div.block_item_title {
+    font-weight: 900;
+    font-size: 11pt;
+}
+
+div.inline_label label {
+    display: inline-block;
+}

@@ -1,0 +1,15 @@
+.htaccess
+Config/core.php
+Config/database.php
+tmp/*
+webroot/talks/cache/*
+webroot/media/*
+webroot/.htaccess
+webroot/css/cc_*
+webroot/js/cc_*
+webroot/js/c/*
+
+webroot/talks/files/*
+error
+stats
+nbproject

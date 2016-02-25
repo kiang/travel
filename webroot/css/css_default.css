@@ -1,0 +1,78 @@
+#Header h1 {
+    position: inherit;
+    top: auto;
+    width: 180px;
+    height: 90px;
+    background: url(images/icons.png) no-repeat 0px 0px;
+}
+/*Search*/
+#Search {
+    padding: 15px 0px;
+}
+/*Links*/
+#Links {
+    padding: 0px;
+    margin: 3px 0px 0px 0px;
+    list-style: none;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: right;
+    height: 87px;
+    width: 100px;
+    overflow: hidden;
+}
+#Links a {
+    font-weight: bold;
+}
+/*Btns*/
+#Btns {
+    float: left;
+    padding: 0px;
+}
+#Btns li {
+    width: 100px;
+}
+#Btns li.dbtn_route a {
+    float: left;
+}
+#Btns li.dbtn_location a {
+    margin: 0px auto;
+}
+#Btns li.dbtn_area a {
+    float: right;
+}
+#Btns li a {
+    width: 90px;
+    height: 90px;
+    float: none;
+}
+#Btns li.dbtn_route a {
+    background-position: 0px -160px;
+}
+#Btns li.dbtn_route a:hover {
+    background-position: 0px -250px;
+}
+#Btns li.dbtn_route a:active {
+    background-position: 0px -340px;
+}
+#Btns li.dbtn_location a {
+    background-position: -105px -160px;
+}
+#Btns li.dbtn_location a:hover {
+    background-position: -105px -250px;
+}
+#Btns li.dbtn_location a:active {
+    background-position: -105px -340px;
+}
+#Btns li.dbtn_area a {
+    background-position: -210px -160px;
+}
+#Btns li.dbtn_area a:hover {
+    background-position: -210px -250px;
+}
+#Btns li.dbtn_area a:active {
+    background-position: -210px -340px;
+}
+hr.line {
+    padding: 20px 0px;
+}

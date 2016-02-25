@@ -1,0 +1,686 @@
+.olc-icon {
+    width: 16px;
+    height: 16px;
+    display: block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url(images/ui-icons_3d3d3d_256x240.png);
+    float: left;
+    background-color: #FFFFFF;
+    border: 1px solid #D19405;
+    margin: 0px 3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+}
+
+.olc-icon-content {
+    display: block;
+    float: left;
+    height: 80px;
+    overflow: hidden;
+}
+
+.olc-icon-enable {
+    width: 16px;
+    height: 16px;
+    display: block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url(images/ui-icons_d19405_256x240.png);
+    float: left;
+}
+
+.olc-icon-disable {
+    width: 16px;
+    height: 16px;
+    display: block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url(images/ui-icons_454545_256x240.png);
+    float: left;
+}
+
+.olc-right-pannel {
+    clear: both;
+    display: block;
+    float: right;
+}
+
+.olc-left-content {
+    float: left;
+}
+.olc-right-content {
+    float: right;
+}
+
+.olcSprite {
+    float: left;
+    display: block;
+    margin: 0px 5px;
+    background: transparent url('images/mapMarkers.png') no-repeat;
+    text-indent: -10000px;
+}
+.mBlank { background-position: 0 0; width: 20px; height: 34px}
+.mDot { background-position: -22px 0; width: 20px; height: 34px}
+.m00 { background-position: -44px 0; width: 20px; height: 34px}
+.m01 { background-position: -66px 0; width: 20px; height: 34px}
+.m02 { background-position: -88px 0; width: 20px; height: 34px}
+.m03 { background-position: -110px 0; width: 20px; height: 34px}
+.m04 { background-position: -132px 0; width: 20px; height: 34px}
+.m05 { background-position: -154px 0; width: 20px; height: 34px}
+.m06 { background-position: -176px 0; width: 20px; height: 34px}
+.m07 { background-position: -198px 0; width: 20px; height: 34px}
+.m08 { background-position: -220px 0; width: 20px; height: 34px}
+.m09 { background-position: -242px 0; width: 20px; height: 34px}
+.m10 { background-position: -264px 0; width: 20px; height: 34px}
+.m11 { background-position: -286px 0; width: 20px; height: 34px}
+.m12 { background-position: -308px 0; width: 20px; height: 34px}
+.m13 { background-position: -330px 0; width: 20px; height: 34px}
+.m14 { background-position: -352px 0; width: 20px; height: 34px}
+.m15 { background-position: -374px 0; width: 20px; height: 34px}
+.m16 { background-position: -396px 0; width: 20px; height: 34px}
+.m17 { background-position: -418px 0; width: 20px; height: 34px}
+.m18 { background-position: -440px 0; width: 20px; height: 34px}
+.m19 { background-position: 0 -36px; width: 20px; height: 34px}
+.m20 { background-position: -22px -36px; width: 20px; height: 34px}
+.m21 { background-position: -44px -36px; width: 20px; height: 34px}
+.m22 { background-position: -66px -36px; width: 20px; height: 34px}
+.m23 { background-position: -88px -36px; width: 20px; height: 34px}
+.m24 { background-position: -110px -36px; width: 20px; height: 34px}
+.m25 { background-position: -132px -36px; width: 20px; height: 34px}
+.m26 { background-position: -154px -36px; width: 20px; height: 34px}
+.m27 { background-position: -176px -36px; width: 20px; height: 34px}
+.m28 { background-position: -198px -36px; width: 20px; height: 34px}
+.m29 { background-position: -220px -36px; width: 20px; height: 34px}
+.m30 { background-position: -242px -36px; width: 20px; height: 34px}
+.m31 { background-position: -264px -36px; width: 20px; height: 34px}
+.m32 { background-position: -286px -36px; width: 20px; height: 34px}
+.m33 { background-position: -308px -36px; width: 20px; height: 34px}
+.m34 { background-position: -330px -36px; width: 20px; height: 34px}
+.m35 { background-position: -352px -36px; width: 20px; height: 34px}
+.m36 { background-position: -374px -36px; width: 20px; height: 34px}
+.m37 { background-position: -396px -36px; width: 20px; height: 34px}
+.m38 { background-position: -418px -36px; width: 20px; height: 34px}
+.m39 { background-position: -440px -36px; width: 20px; height: 34px}
+.m40 { background-position: 0 -72px; width: 20px; height: 34px}
+.m41 { background-position: -22px -72px; width: 20px; height: 34px}
+.m42 { background-position: -44px -72px; width: 20px; height: 34px}
+.m43 { background-position: -66px -72px; width: 20px; height: 34px}
+.m44 { background-position: -88px -72px; width: 20px; height: 34px}
+.m45 { background-position: -110px -72px; width: 20px; height: 34px}
+.m46 { background-position: -132px -72px; width: 20px; height: 34px}
+.m47 { background-position: -154px -72px; width: 20px; height: 34px}
+.m48 { background-position: -176px -72px; width: 20px; height: 34px}
+.m49 { background-position: -198px -72px; width: 20px; height: 34px}
+.m50 { background-position: -220px -72px; width: 20px; height: 34px}
+.m51 { background-position: -242px -72px; width: 20px; height: 34px}
+.m52 { background-position: -264px -72px; width: 20px; height: 34px}
+.m53 { background-position: -286px -72px; width: 20px; height: 34px}
+.m54 { background-position: -308px -72px; width: 20px; height: 34px}
+.m55 { background-position: -330px -72px; width: 20px; height: 34px}
+.m56 { background-position: -352px -72px; width: 20px; height: 34px}
+.m57 { background-position: -374px -72px; width: 20px; height: 34px}
+.m58 { background-position: -396px -72px; width: 20px; height: 34px}
+.m59 { background-position: -418px -72px; width: 20px; height: 34px}
+.m60 { background-position: -440px -72px; width: 20px; height: 34px}
+.m61 { background-position: 0 -108px; width: 20px; height: 34px}
+.m62 { background-position: -22px -108px; width: 20px; height: 34px}
+.m63 { background-position: -44px -108px; width: 20px; height: 34px}
+.m64 { background-position: -66px -108px; width: 20px; height: 34px}
+.m65 { background-position: -88px -108px; width: 20px; height: 34px}
+.m66 { background-position: -110px -108px; width: 20px; height: 34px}
+.m67 { background-position: -132px -108px; width: 20px; height: 34px}
+.m68 { background-position: -154px -108px; width: 20px; height: 34px}
+.m69 { background-position: -176px -108px; width: 20px; height: 34px}
+.m70 { background-position: -198px -108px; width: 20px; height: 34px}
+.m71 { background-position: -220px -108px; width: 20px; height: 34px}
+.m72 { background-position: -242px -108px; width: 20px; height: 34px}
+.m73 { background-position: -264px -108px; width: 20px; height: 34px}
+.m74 { background-position: -286px -108px; width: 20px; height: 34px}
+.m75 { background-position: -308px -108px; width: 20px; height: 34px}
+.m76 { background-position: -330px -108px; width: 20px; height: 34px}
+.m77 { background-position: -352px -108px; width: 20px; height: 34px}
+.m78 { background-position: -374px -108px; width: 20px; height: 34px}
+.m79 { background-position: -396px -108px; width: 20px; height: 34px}
+.m80 { background-position: -418px -108px; width: 20px; height: 34px}
+.m81 { background-position: -440px -108px; width: 20px; height: 34px}
+.m82 { background-position: 0 -144px; width: 20px; height: 34px}
+.m83 { background-position: -22px -144px; width: 20px; height: 34px}
+.m84 { background-position: -44px -144px; width: 20px; height: 34px}
+.m85 { background-position: -66px -144px; width: 20px; height: 34px}
+.m86 { background-position: -88px -144px; width: 20px; height: 34px}
+.m87 { background-position: -110px -144px; width: 20px; height: 34px}
+.m88 { background-position: -132px -144px; width: 20px; height: 34px}
+.m89 { background-position: -154px -144px; width: 20px; height: 34px}
+.m90 { background-position: -176px -144px; width: 20px; height: 34px}
+.m91 { background-position: -198px -144px; width: 20px; height: 34px}
+.m92 { background-position: -220px -144px; width: 20px; height: 34px}
+.m93 { background-position: -242px -144px; width: 20px; height: 34px}
+.m94 { background-position: -264px -144px; width: 20px; height: 34px}
+.m95 { background-position: -286px -144px; width: 20px; height: 34px}
+.m96 { background-position: -308px -144px; width: 20px; height: 34px}
+.m97 { background-position: -330px -144px; width: 20px; height: 34px}
+.m98 { background-position: -352px -144px; width: 20px; height: 34px}
+.m99 { background-position: -374px -144px; width: 20px; height: 34px}
+
+
+/*項目圖示*/
+.spot:before {
+    content: ' ';
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px 5px 0px 0px;
+    background: url(images/icons.png) no-repeat;
+}
+.spot_XY:before, .spot_XX:before { /*男女性*/
+    width: 12px;
+    height: 14px;
+    margin: 5px 3px 0px 0px;
+}
+.spot_XY:before { /*男性*/
+    background-position: -210px -30px;
+}
+.spot_XX:before { /*女性*/
+    background-position: -230px -30px;
+}
+.spot_route:before {/*行程*/
+    background-position: -280px -435px;
+}
+.spot_point:before {/*地點*/
+    background-position: -280px -460px;
+}
+.spot_area:before {/*區域*/
+    background-position: -280px -485px;
+}
+.spot_profile:before {/*檔案*/
+    background-position: -280px -510px;
+}
+
+/*分類圖示*/
+.category { /*一般標示*/
+    display: block;
+    width: 40px;
+    height: 50px;
+    margin-right: 3px;
+    text-indent: -500px;
+    overflow: hidden;
+    background: url(images/category.png) no-repeat;
+}
+.category * {
+    display: block;
+    height: 50px;
+}
+/*交通工具圖示(Transport)*/
+.categoryT01 {
+    background-position: 0px 0px;
+}
+.categoryT02 {
+    background-position: 0px -50px;
+}
+.categoryT03 {
+    background-position: 0px -100px;
+}
+.categoryT04 {
+    background-position: 0px -150px;
+}
+.categoryT05 {
+    background-position: 0px -200px;
+}
+.categoryT06 {
+    background-position: 0px -250px;
+}
+.categoryT07 {
+    background-position: 0px -300px;
+}
+.categoryT08 {
+    background-position: 0px -350px;
+}
+.categoryT09 {
+    background-position: -50px 0px;
+}
+.categoryT10 {
+    background-position: -50px -50px;
+}
+.categoryT11 {
+    background-position: -50px -100px;
+}
+.categoryT12 {
+    background-position: -50px -150px;
+}
+.categoryT13 {
+    background-position: -50px -200px;
+}
+.categoryT14 {
+    background-position: -50px -250px;
+}
+.categoryT15 {
+    background-position: -50px -300px;
+}
+.categoryT16 {
+    background-position: -50px -350px;
+}
+.categoryT17 {
+    background-position: -100px 0px;
+}
+.categoryT18 {
+    background-position: -100px -50px;
+}
+.categoryT19 {
+    background-position: -100px -100px;
+}
+.categoryT20 {
+    background-position: -100px -150px;
+}
+.categoryT21 {
+    background-position: -100px -200px;
+}
+.categoryT22 {
+    background-position: -100px -250px;
+}
+.categoryT23 {
+    background-position: -100px -300px;
+}
+.categoryT24 {
+    background-position: -100px -350px;
+}
+/*活動分類圖示(Activity)*/
+.categoryA01 {
+    background-position: -150px 0px;
+}
+.categoryA02 {
+    background-position: -150px -50px;
+}
+.categoryA03 {
+    background-position: -150px -100px;
+}
+.categoryA04 {
+    background-position: -150px -150px;
+}
+.categoryA05 {
+    background-position: -150px -200px;
+}
+.categoryA06 {
+    background-position: -150px -250px;
+}
+.categoryA07 {
+    background-position: -150px -300px;
+}
+.categoryA08 {
+    background-position: -150px -350px;
+}
+.categoryA09 {
+    background-position: -200px 0px;
+}
+.categoryA10 {
+    background-position: -200px -50px;
+}
+.categoryA11 {
+    background-position: -200px -100px;
+}
+.categoryA12 {
+    background-position: -200px -150px;
+}
+.categoryA13 {
+    background-position: -200px -200px;
+}
+.categoryA14 {
+    background-position: -200px -250px;
+}
+.categoryA15 {
+    background-position: -200px -300px;
+}
+
+
+/*功能按鈕*/
+.icon {
+    height: 20px;
+    padding-left: 23px;
+    display: inline-block;
+    background-image: url(images/icon_spots.png);
+    background-repeat: no-repeat;
+    font-size: 15px;
+    color: #333;
+}
+.icon_back { /*返回*/
+    background-position: 0px 0px;
+}
+.icon_back:hover {
+    background-position: 0px -20px;
+}
+.icon_edit { /*編輯*/
+    background-position: 0px -40px;
+}
+.icon_edit:hover {
+    background-position: 0px -60px;
+}
+.icon_plus { /*加入*/
+    background-position: 0px -80px;
+}
+.icon_plus:hover {
+    background-position: 0px -100px;
+}
+.icon_home { /*網站*/
+    background-position: 0px -120px;
+}
+.icon_home:hover {
+    background-position: 0px -140px;
+}
+.icon_hand { /*點擊*/
+    background-position: 0px -160px;
+}
+.icon_hand:hover {
+    background-position: 0px -180px;
+}
+.icon_comment { /*評論*/
+    background-position: 0px -200px;
+}
+.icon_comment:hover {
+    background-position: 0px -220px;
+}
+.icon_watch { /*關注*/
+    background-position: 0px -240px;
+}
+.icon_watch:hover {
+    background-position: 0px -260px;
+}
+.icon_watched { /*關注*/
+    background-position: 0px -260px;
+}
+.icon_watched:hover {
+    background-position: 0px -240px;
+}
+.icon_print { /*列印*/
+    background-position: 0px -280px;
+}
+.icon_print:hover {
+    background-position: 0px -300px;
+}
+.icon_route { /*行程*/
+    background-position: 0px -320px;
+}
+.icon_route:hover {
+    background-position: 0px -340px;
+}
+.icon_point { /*地點*/
+    background-position: 0px -360px;
+}
+.icon_point:hover {
+    background-position: 0px -380px;
+}
+.icon_area { /*區域*/
+    background-position: 0px -400px;
+}
+.icon_area:hover {
+    background-position: 0px -420px;
+}
+.icon_move { /*移動*/
+    background-position: 0px -440px;
+}
+.icon_move:hover {
+    background-position: 0px -460px;
+}
+.icon_delete { /*刪除*/
+    background-position: 0px -480px;
+}
+.icon_delete:hover {
+    background-position: 0px -500px;
+}
+.icon_search { /*搜尋*/
+    background-position: 0px -520px;
+}
+.icon_search:hover {
+    background-position: 0px -540px;
+}
+.icon_calendar { /*日曆*/
+    background-position: 0px -560px;
+}
+.icon_add { /*新增*/
+    background-position: 0px -580px;
+}
+.icon_add:hover {
+    background-position: 0px -600px;
+}
+.icon_import { /*匯入*/
+    background-position: 0px -580px;
+}
+.icon_import:hover {
+    background-position: 0px -600px;
+}
+.icon_set { /*設定*/
+    background-position: 0px -740px;
+}
+.icon_set:hover {
+    background-position: 0px -760px;
+}
+.icon_export { /*匯出*/
+    background-position: 0px -660px;
+}
+.icon_export:hover {
+    background-position: 0px -680px;
+}
+
+
+.dbtn { /*按鈕樣式- <a> <input>*/
+    padding: 0px 6px;
+    cursor: pointer;
+    border: none;
+    line-height: 25px;
+    height: 25px;
+    display: inline-block;
+    white-space: nowrap;
+}
+.dbtn:disabled { /*當按鈕有disabled屬性時*/
+    color: #999999;
+    cursor: default;
+    border: 1px solid #CCCCCC;
+    background: #C8C8C8;
+}
+.dbtn:hover {
+    text-decoration: none;
+}
+.dbtn0 {
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    background: url(images/icons.png) no-repeat -105px -110px;
+}
+a.dbtn0 {
+    width: 85px;
+    padding-left: 5px;
+}
+.dbtn0:hover, .dbtn0:active {
+    color: #FFF;
+    background: url(images/icons.png) no-repeat 0px -110px;
+}
+.dbtn1 {
+    color: #FFF;
+    font-weight: bold;
+    background: #BBB;
+}
+.dbtn1:hover, .dbtn1:active {
+    background: #888;
+}
+.dbtn2 {
+    color: #FFF;
+    background: #666;
+}
+.dbtn2:hover, .dbtn2:active {
+    background: #000;
+}
+.dbtn3 {
+    color: #000;
+    display: block;
+    margin: 0px;
+    padding: 3px;
+    text-align: center;
+    border: 3px solid #dddddd;
+    background: #dddddd; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #dddddd 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#dddddd 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#dddddd 100%); /* IE10+ */
+    background: linear-gradient(top,  #ffffff 0%,#dddddd 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+}
+.dbtn3:hover, .dbtn3:active, .dbtn3.current {
+    border: 3px solid #cccccc;
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+    background: linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+.dbtn_move, .dbtn_delete, .dbtn_search, .dbtn_calendar, .dbtn_add, .dbtn_import, .dbtn_export, .dbtn_edit, .dbtn_plus, .dbtn_X, .dbtn_watch {
+    padding: 0px;
+    line-height: 100px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    overflow: hidden;
+    background-image: url(images/icon_spots.png);
+}
+.dbtn_move { /*移動*/
+    background-position: 0px -440px;
+}
+.dbtn_move:hover {
+    background-position: 0px -460px;
+}
+.dbtn_delete { /*刪除*/
+    background-position: 0px -480px;
+}
+.dbtn_delete:hover {
+    background-position: 0px -500px;
+}
+.dbtn_search { /*搜尋*/
+    background-position: 0px -520px;
+}
+.dbtn_search:hover {
+    background-position: 0px -540px;
+}
+.dbtn_calendar { /*日曆*/
+    background-position: 0px -560px;
+}
+.dbtn_add { /*加入*/
+    background-position: 0px -580px;
+}
+.dbtn_add:hover {
+    background-position: 0px -600px;
+}
+.dbtn_import { /*匯入*/
+    background-position: 0px -620px;
+}
+.dbtn_import:hover {
+    background-position: 0px -640px;
+}
+.dbtn_export { /*匯出*/
+    background-position: 0px -660px;
+}
+.dbtn_export:hover {
+    background-position: 0px -680px;
+}
+.dbtn_edit { /*編輯*/
+    background-position: 0px -700px;
+}
+.dbtn_edit:hover {
+    background-position: 0px -720px;
+}
+.dbtn_X { /*刪除*/
+    background-position: 0px -780px;
+}
+.dbtn_X:hover {
+    background-position: 0px -800px;
+}
+.dbtn_watch { /*已讀*/
+    background-position: 0px -820px;
+}
+.dbtn_watch:hover {
+    background-position: 0px -840px;
+}
+
+/*步驟選單*/
+ul.steps_menu { 
+    list-style: none;
+    display: block;
+    float: left;
+    width: 100%;
+}
+ul.steps_menu, ul.steps_menu * {
+    padding: 0px;
+    margin: 0px;
+}
+ul.steps_menu li {
+    position: relative;
+    display: block;
+    height: 60px;
+    padding: 0px 2px 0px 20px;
+    float: left;
+    border: 1px solid #FFF;
+    background: #EEE;
+}
+ul.steps_menu li:first-child {
+    padding-left: 10px;
+    border-radius: 10px 0px 0px 10px; /* Opera 10.5+, IE9 */
+    -moz-border-radius: 10px 0px 0px 10px; /* Firefox */
+    -webkit-border-radius: 10px 0px 0px 10px; /* Safari 和 Chrome */
+}
+ul.steps_menu li:first-child:before, ul.steps_menu li:last-child:after {
+    content: '';
+    display: none;
+}
+ul.steps_menu li:last-child {
+    padding-right: 7px;
+    border-radius: 0px 10px 10px 0px; /* Opera 10.5+, IE9 */
+    -moz-border-radius: 0px 10px 10px 0px; /* Firefox */
+    -webkit-border-radius: 0px 10px 10px 0px; /* Safari 和 Chrome */
+}
+ul.steps_menu li:before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0px;
+    top: 0px;
+    border-top: 30px solid transparent;
+    border-left: 12px solid #FFF;
+    border-bottom: 30px solid transparent;
+}
+ul.steps_menu li:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    right: -12px;
+    top: 0px;
+    border-top: 30px solid transparent;
+    border-left: 12px solid #EEE;
+    border-bottom: 30px solid transparent;
+}
+ul.steps_menu li.current {
+    background: #DDD;
+}
+ul.steps_menu li.current:after {
+    border-left: 12px solid #DDD;
+}
+ul.steps_menu li:hover {
+    color: #000;
+    background: #DDD;
+}
+ul.steps_menu li:hover:after {
+    border-left: 12px solid #DDD;
+}
+ul.steps_menu li strong {
+    line-height: 30px;
+    color: #999;
+}
+ul.steps_menu li a:hover {
+    color: #309;
+}

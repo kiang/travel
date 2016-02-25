@@ -1,0 +1,1522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>行程名稱 - 就愛玩</title>
+<link href='favicon.ico' rel='shortcut icon'/>
+<!--[if lte IE 6]> <link href="style_ie6.css" rel="stylesheet" type="text/css" /> <![endif]-->
+<link href="css_frame.css" rel="stylesheet" type="text/css" />
+<link href="css_style.css" rel="stylesheet" type="text/css" />
+<link href="css_icon.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="Page"> 
+	<!-- Header Start -->
+	<div id="Header">
+		<div class="fields_3">
+			<div class="block">
+				<h1 class="float-l"><a href="index.html" title="就愛玩 首頁">就愛玩</a></h1>
+				<ul id="Btns" class="float-r">
+					<li class="btn_route"><a href="schedules_list.html" title="行程" class="active">行程</a></li>
+					<li class="btn_point"><a href="points_list.html" title="地點">地點</a></li>
+					<li class="btn_area"><a href="areas_list.html" title="區域">區域</a></li>
+				</ul>
+				<div class="clear-b"></div>
+			</div>
+		</div>
+		<div class="fields_3">
+			<div class="block">
+				<div id="Search" class="clear-b">
+					<form id="form1" name="form1" method="post" action="findings.html">
+						<input name="textfield" type="text" class="fillet_all shadow-box1 txt_L float-l" id="Search_bar" value="就愛玩...哪兒？" />
+						<input name="button" type="submit" class="txt_M float-r" id="Search_btn" value="GO" />
+						<div class="clear-b"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="fields_3">
+			<div class="block">
+				<div class="img-s float-l"><span></span><a href="member_profile.html"><img src="images/head_s.png" alt="member profile" /></a></div>
+				<div class="spot spot_XY overspots"><a href="member_profile.html" title="會員暱稱 會員暱稱 會員暱稱 會員暱稱">會員暱稱 會員暱稱 會員暱稱 會員暱稱</a></div>
+				<a href="#"><strong>登出帳戶</strong></a> | <a href="member_profile.html" class="color2b"><strong>我的首頁</strong></a> | <a href="#" class="color3b"><strong>Facebook</strong></a>
+				<div class="clear-b"></div>
+			</div>
+		</div>
+		<div class="clear-b"></div>
+		<hr class="line" />
+		<div id="Cart">
+			<div id="CartLine1"><span class="btn btn1 fillet_all">我的行程表: 請選擇匯入目標...</span></div>
+			<div id="CartBox_contentbox">
+				<div id="CartList1" class="fillet_all shadow-box2">
+					<div class="btn btn1 fillet_top">我的行程表:
+						<select name="select">
+							<option selected="selected">第 1 天</option>
+							<option>第 2 天</option>
+							<option>第 3 天</option>
+							<option>第 N 天</option>
+							<option>第 100 天</option>
+						</select>
+					</div>
+					<ol class="fillet_all">
+						<li><a href="#" title="JR東日本 上野車站(上野駅)">JR東日本 上野車站(上野駅)</a></li>
+						<li><a href="#" title="JR東日本 神田駅">JR東日本 神田駅</a></li>
+						<li><a href="#" title="金龍山淺草寺">金龍山淺草寺</a></li>
+						<li><a href="#" title="中華料理 成都 四谷三丁目店">中華料理 成都 四谷三丁目店</a></li>
+						<li><a href="#" title="大崎駅(りんかい線)">大崎駅(りんかい線)</a></li>
+					</ol>
+					<a href="schedules_list.html" class="btn btn1 fillet_bottom" title="檢視並編輯我的行程表">開始編輯我的行程&gt;&gt;</a>
+					<div class="clearB"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Header End -->
+	<div class="clear-b"></div>
+	<!-- Main Start -->
+	<div id="Main">
+		<div class="block">
+			<div id="Breadcrumb"><strong>狀態：</strong>
+				<input name="" type="radio" value="" checked="checked" />
+				發表(公開)
+				<input name="" type="radio" value="" />
+				暫存(隱藏) <span class="mark_txt">※本項目僅編輯者個人可見。</span></div>
+			<div class="fields_2">
+				<div id="Mapbox">
+					<div id="Map" style="width: 97%; min-width: 300px; height: 320px; background: #DDD;"> Map元件請替換掉&lt;div id=&quot;Map&quot;&gt;&lt;/div&gt;此塊內容，<br />
+						style=&quot;width: 97%; height: 320px; background: #DDD;&quot;則須保留。 <br />
+						寬度設97%，將會隨min=300px max=470px的區塊來縮放；<br />
+						高度設320px，不建議更高，如果要更高建議改用開box處理，<br />
+						所以左上角也有加文字連結，如無意外該可以遮在map圖層的上面。 </div>
+				</div>
+			</div>
+			<div class="fields_2">
+				<div class="title2">
+					<h2 class="spot spot_route float-l">行程資訊</h2>
+					<div id="InfoBox">
+						<div id="InfoBox_tabline">
+							<div id="InfoBox_tab1">
+								<div class="info_btn3" title="瀏覽本行程所有的同行者">同行者</div>
+							</div>
+							<div id="InfoBox_tab2">
+								<div class="info_btn2" title="將本地點分享到...">分享到</div>
+							</div>
+							<div class="clear-b"></div>
+						</div>
+						<div class="clear-b"></div>
+						<div id="InfoBox_contentbox">
+							<div id="InfoBox_content1">
+								<h5>
+									<div class="info_btn3" title="瀏覽本行程所有的同行者"><a href="#" class="dialogCompanion" title="同行者名單">同行者</a></div>
+								</h5>
+								<dl class="list2">
+									<dt>本站會員</dt>
+									<dd><a href="member_profile.html" title="同行者名稱同行者名稱同行者名稱同行者名稱" class="overspots">同行者名稱同行者名稱同行者名稱同行者名稱</a></dd>
+									<dd><a href="member_profile.html" title="同行者名稱同行者名稱同行者名稱同行者名稱" class="overspots">同行者名稱同行者名稱同行者名稱同行者名稱</a></dd>
+									<dd><a href="member_profile.html" title="同行者名稱同行者名稱同行者名稱同行者名稱" class="overspots">同行者名稱同行者名稱同行者名稱同行者名稱</a></dd>
+									<dt>非本站會員</dt>
+									<dd>同行者名稱</dd>
+									<dd>同行者名稱</dd>
+								</dl>
+								<div class="clear-b"></div>
+								<p><a class="dialogCompanion btn btn3 fillet_all" href="#" title="編輯同行者名單">編輯同行者 &gt;&gt;</a></p>
+							</div>
+							<div id="InfoBox_content2">
+								<h5>
+									<div class="info_btn2" title="將本地點分享到...">分享到</div>
+								</h5>
+								把原本的內容放在這裡面就可以了，外面框框不要。如果寬度有問題的話，CSS給我，我再調。
+								<div class="clear-b"></div>
+							</div>
+						</div>
+					</div>
+					<div class="clear-b"></div>
+				</div>
+				<div class="list1">
+					<ul class="table">
+						<li class="table"><span class="table_td2">名稱：</span>行程標題行程標題行程標題行程標題行程標題行程標題</li>
+						<li class="table"><span class="table_td2">時程：</span>100天 0000-00-00 00:00:00 ~ 0000-00-00 00:00:00</li>
+						<li class="table"><span class="table_td2">路程：</span>行經 <a href="#" class="mark_txt dialogArea">100</a>個區域 <a href="#" class="mark_txt dialogPoint">1000</a>個地點 / 從 <span class="mark_txt">出發地點名稱</span>出發</li>
+						<li>行程簡介。行程簡介。行程簡介。行程簡介。行程簡介。行程簡介。行程簡介。行程簡介。行程簡介。行程簡介。行程簡介。行程簡介。行程簡介。行程簡介。行程簡介。行程簡介。行程簡介。</li>
+					</ul>
+					<div class="clear-b"></div>
+				</div>
+				<div class="img-s float-l"><span></span><a href="member_profile.html"><img src="images/head_s.png" alt="member profile" /></a></div>
+				<div class="spot spot_XY overspots"><a href="member_profile.html" title="會員暱稱 會員暱稱 會員暱稱 會員暱稱">會員暱稱 會員暱稱 會員暱稱 會員暱稱</a></div>
+				<ul class="list1">
+					<li class="txt_S color1b">2012-00-00 00:00:00 posted</li>
+					<li class="txt_S color1b">2012-00-00 00:00:00 updated</li>
+				</ul>
+			</div>
+			<div class="clear-b"></div>
+		</div>
+		<hr class="line" />
+		<ul class="list1 float-r">
+			<li><a href="schedules_list.html" title="返回上一頁" class="icon icon_back">返回</a></li>
+			<li><a href="#" title="關注行程的最新動態" class="icon icon_watch">關注</a></li>
+			<li><a href="#" title="編輯行程的基本資訊" class="dialogSchedule icon icon_edit float-r">編輯</a></li>
+			<li><a href="schedule_print.html" title="預覽列印行程表" class="icon icon_print lightbox_page">列印</a></li>
+			<li><a href="#" title="將行程加入我的行程表" class="icon icon_plus">加入</a></li>
+		</ul>
+		<div class="clear-b"></div>
+		<div class="block"> <a name="Tabs" id="Tabs"></a>
+			<div id="TabBox">
+				<div id="TabBox2_tabline">
+					<div id="TabBox2_tab1" title="本行程日程表">行程彙總</div>
+					<div id="TabBox2_tab2" title="本行程相關留言評論">留言評論</div>
+					<div id="TabBox2_tab3" title="本行程相關網站或網誌介紹">相關連結</div>
+				</div>
+				<div id="TabBox2_contentbox">
+					<div id="TabBox2_content1">
+						<h5>
+							<div title="本行程日程表">行程彙總</div>
+						</h5>
+						<div class="clear-b"></div>
+						<div class="selecter">
+							<div class="float-l">
+								<select name="select">
+									<option selected="selected">行程總覽</option>
+									<option>第 1 天</option>
+									<option>第 2 天</option>
+									<option>第 3 天</option>
+									<option>第 N 天</option>
+									<option>第 100 天</option>
+								</select>
+								共行經 <span class="mark_txt">100</span>個區域 <span class="mark_txt">1000</span>個地點</div>
+							<ul class="list1 float-r">
+								<li><a href="#" class="btn btn_edit" title="編輯行程表">編輯</a></li>
+								<li><a href="#" class="btn btn_add" title="新增地點">新增</a></li>
+								<li><a href="#" class="btn btn_delete" title="刪除本日">刪除</a></li>
+								<li><a href="#" class="dialogImport btn btn_import" title="自其他的行程匯入">匯入</a></li>
+								<li><a href="#" class="dialogExport btn btn_export" title="匯出到其他行程中">匯出</a></li>
+							</ul>
+							<div class="clear-b"></div>
+						</div>
+						<div class="clear-b"></div>
+						<dl class="list3 table">
+							<dt class="table-cell fillet_left"><strong>第1天</strong> <span class="btn btn_move" title="拖曳調整順序">移動</span> <span class="btn btn_delete" title="刪除本日行程">刪除</span></dt>
+							<dd class="table-cell fillet_right"><a href="#" class="olcSprite mDot" title="查看地圖釘選資訊">釘選</a>
+								<h3><span>00-00-00 (一) </span>日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字</h3>
+								<h4>住宿地點: <a href="point_box.html" class="lightbox_page" title="住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點">住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點</a></h4>
+								<div class="clear-b"></div>
+								<div class="fields_2">
+									<ul class="list1">
+										<li>
+											<sapn class="btn btn3 fillet_all" title="展開本日詳細行程">
+											＋</span></li>
+										<li>
+											<sapn class="btn btn3 fillet_all" title="切換為文字清單 (文字模式)">
+											文字清單</span></li>
+										<li>
+											<sapn class="btn btn3 fillet_all" title="切換為圖文表格 (圖片模式)">
+											圖文表格</span></li>
+									</ul>
+								</div>
+								<div class="fields_2">
+									<div class="float-r">共行經 <span class="mark_txt">1</span>個區域 <span class="mark_txt">10</span>個地點</div>
+								</div>
+								<div class="clear-b"></div>
+							</dd>
+						</dl>
+						<dl class="list3 table">
+							<dt class="table-cell fillet_left"><strong>第2天</strong> <span class="btn btn_move" title="拖曳調整順序">移動</span> <span class="btn btn_delete" title="刪除本日行程">刪除</span></dt>
+							<dd class="table-cell fillet_right"><a href="#" class="olcSprite mDot" title="查看地圖釘選資訊">釘選</a>
+								<h3><span>00-00-00 (一) </span>日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字</h3>
+								<h4>住宿地點: <a href="point_box.html" class="lightbox_page" title="住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點">住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點</a></h4>
+								<div class="clear-b"></div>
+								<div class="fields_2">
+									<ul class="list1">
+										<li>
+											<sapn class="btn btn3 fillet_all" title="收合本日詳細行程">
+											－</span></li>
+										<li>
+											<sapn class="btn btn3 fillet_all current" title="切換為文字清單 (文字模式)">
+											文字清單</span></li>
+										<li>
+											<sapn class="btn btn3 fillet_all" title="切換為圖文表格 (圖片模式)">
+											圖文表格</span></li>
+									</ul>
+								</div>
+								<div class="fields_2">
+									<div class="float-r">共行經 <span class="mark_txt">1</span>個區域 <span class="mark_txt">10</span>個地點</div>
+								</div>
+								<div class="clear-b"></div>
+								<ul class="list2">
+									<li class="table">
+										<div class="table-cell"><a href="#" class="olcSprite m01" title="查看地圖釘選資訊">01</a></div>
+										<div class="table-cell txt"> <span class="color1a">00:00:00 ~ 00:00:00</span> <span class="color3a">交通分類名目</span>到 <a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a> 進行<span class="color2b">活動分類名目</span> </div>
+									</li>
+									<li class="table">
+										<div class="table-cell"><a href="#" class="olcSprite m02" title="查看地圖釘選資訊">01</a></div>
+										<div class="table-cell txt"> <span class="color1a">00:00:00 ~ 00:00:00</span> <span class="color3a">交通分類名目</span>到 <a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a> 進行<span class="color2b">活動分類名目</span> </div>
+									</li>
+									<li class="table">
+										<div class="table-cell"><a href="#" class="olcSprite m03" title="查看地圖釘選資訊">01</a></div>
+										<div class="table-cell txt"> <span class="color1a">00:00:00 ~ 00:00:00</span> <span class="color3a">交通分類名目</span>到 <a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a> 進行<span class="color2b">活動分類名目</span> </div>
+									</li>
+									<li class="table">
+										<div class="table-cell"><a href="#" class="olcSprite m04" title="查看地圖釘選資訊">01</a></div>
+										<div class="table-cell txt"> <span class="color1a">00:00:00 ~ 00:00:00</span> <span class="color3a">交通分類名目</span>到 <a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a> 進行<span class="color2b">活動分類名目</span> </div>
+									</li>
+									<li class="table">
+										<div class="table-cell"><a href="#" class="olcSprite m05" title="查看地圖釘選資訊">01</a></div>
+										<div class="table-cell txt"> <span class="color1a">00:00:00 ~ 00:00:00</span> <span class="color3a">交通分類名目</span>到 <a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a> 進行<span class="color2b">活動分類名目</span> </div>
+									</li>
+								</ul>
+								<div class="clear-b"></div>
+							</dd>
+						</dl>
+						<div class="clear-b"></div>
+						<dl class="list3 table">
+							<dt class="table-cell fillet_left"><strong>第3天</strong> <span class="btn btn_move" title="拖曳調整順序">移動</span> <span class="btn btn_delete" title="刪除本日行程">刪除</span></dt>
+							<dd class="table-cell fillet_right"><a href="#" class="olcSprite mDot" title="查看地圖釘選資訊">釘選</a>
+								<h3><span>00-00-00 (一) </span>日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字</h3>
+								<h4>住宿地點: <a href="point_box.html" class="lightbox_page" title="住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點">住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點住宿地點</a></h4>
+								<div class="clear-b"></div>
+								<div class="fields_2">
+									<ul class="list1">
+										<li>
+											<sapn class="btn btn3 fillet_all" title="收合本日詳細行程">
+											－</span></li>
+										<li>
+											<sapn class="btn btn3 fillet_all" title="切換為文字清單 (文字模式)">
+											文字清單</span></li>
+										<li>
+											<sapn class="btn btn3 fillet_all current" title="切換為圖文表格 (圖片模式)">
+											圖文表格</span></li>
+									</ul>
+								</div>
+								<div class="fields_2">
+									<div class="float-r">共行經 <span class="mark_txt">1</span>個區域 <span class="mark_txt">10</span>個地點</div>
+								</div>
+								<div class="clear-b"></div>
+								<ul class="list2">
+									<li class="table">
+										<div class="table-cell_center table_td_5p bg_gary1"></div>
+										<div class="table-cell_center table_td_10p bg_gary1">交通</div>
+										<div class="table-cell_center bg_gary1">時間地點</div>
+										<div class="table-cell_center table_td_10p bg_gary1">活動</div>
+										<div class="table-cell_center table_td_30p bg_gary1">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m01" title="查看地圖釘選資訊">01</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT01"><span title="自駕">自駕</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA01"><span title="其他活動">其他活動</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m02" title="查看地圖釘選資訊">02</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT02"><span title="機車">機車</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA02"><span title="戶外活動">戶外活動</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m03" title="查看地圖釘選資訊">03</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT03"><span title="自行車">自行車</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA03"><span title="水上活動">水上活動</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m04" title="查看地圖釘選資訊">04</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT04"><span title="步行">步行</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA04"><span title="視聽娛樂">視聽娛樂</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m05" title="查看地圖釘選資訊">05</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT05"><span title="公車">公車</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA05"><span title="舒壓休閒">舒壓休閒</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m06" title="查看地圖釘選資訊">06</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT06"><span title="捷運">捷運</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA06"><span title="飲食/烹飪">飲食/烹飪</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m07" title="查看地圖釘選資訊">07</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT07"><span title="街電車">街電車</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA07"><span title="社交/宴席">社交/宴席</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m08" title="查看地圖釘選資訊">08</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT08"><span title="包車">包車</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA08"><span title="運動/競技">運動/競技</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m09" title="查看地圖釘選資訊">09</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT09"><span title="計程車">計程車</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA09"><span title="益智/博弈">益智/博弈</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m10" title="查看地圖釘選資訊">10</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT10"><span title="遊覽車">遊覽車</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA10"><span title="繪畫/攝影">繪畫/攝影</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m11" title="查看地圖釘選資訊">11</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT11"><span title="接駁車">接駁車</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA11"><span title="工藝/設計">工藝/設計</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m12" title="查看地圖釘選資訊">12</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT12"><span title="客運">客運</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA12"><span title="舞蹈/戲劇">舞蹈/戲劇</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m13" title="查看地圖釘選資訊">13</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT13"><span title="火車">火車</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA13"><span title="音樂/歌謠">音樂/歌謠</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m14" title="查看地圖釘選資訊">14</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT14"><span title="高鐵">高鐵</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA14"><span title="民俗/技藝">民俗/技藝</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m15" title="查看地圖釘選資訊">15</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT15"><span title="飛機">飛機</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA15"><span title="嗜好/收藏">嗜好/收藏</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m16" title="查看地圖釘選資訊">16</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT16"><span title="船舶">船舶</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA01"><span title="其他活動">其他活動</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m17" title="查看地圖釘選資訊">17</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT17"><span title="船隻">船隻</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA01"><span title="其他活動">其他活動</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m18" title="查看地圖釘選資訊">18</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT18"><span title="纜車">纜車</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA01"><span title="其他活動">其他活動</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m19" title="查看地圖釘選資訊">19</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT19"><span title="直升機">直升機</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA01"><span title="其他活動">其他活動</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m20" title="查看地圖釘選資訊">20</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT20"><span title="軌道電動車">軌道電動車</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA01"><span title="其他活動">其他活動</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m21" title="查看地圖釘選資訊">21</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT21"><span title="自駕電動車">自駕電動車</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA01"><span title="其他活動">其他活動</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m22" title="查看地圖釘選資訊">22</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT22"><span title="人力車">人力車</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA01"><span title="其他活動">其他活動</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m23" title="查看地圖釘選資訊">23</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT23"><span title="獸馱">獸馱</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA01"><span title="其他活動">其他活動</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+									<li class="table">
+										<div class="table-cell table_td_5p"><a href="#" class="olcSprite m24" title="查看地圖釘選資訊">24</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryT24"><span title="熱氣球">熱氣球</span></div>
+										</div>
+										<div class="table-cell_middle"> <span class="color1a">00:00:00 ~ 00:00:00</span><br />
+											<a href="point_box.html" class="lightbox_page" title="瀏覽地點詳細資訊">地點名稱地點名稱地點名稱地點名稱地點名稱地點名稱</a></div>
+										<div class="table-cell table_td_10p">
+											<div class="category categoryA01"><span title="其他活動">其他活動</span></div>
+										</div>
+										<div class="table-cell_middle table_td_30p">備註</div>
+									</li>
+								</ul>
+								<div class="clear-b"></div>
+							</dd>
+						</dl>
+						<div class="clear-b"></div>
+						<p><a class="btn btn3 fillet_all" href="#">瀏覽更多內容 &gt;&gt;</a></p>
+					</div>
+					<div id="TabBox2_content2">
+						<h5>
+							<div title="本地點相關留言評論">留言評論</div>
+						</h5>
+						<div class="clear-b"></div>
+						<div class="fields_s">
+							<p class="mark_txt">※如有帳號請先<a href="login.html" title="導向登入頁面（登入後會自動返回本頁）。">登入</a>，即可免填姓名電郵。</p>
+							<form id="form2" name="form2" method="post" action="">
+								<div class="form1 fillet_all">
+									<p>
+										<label for="form_name">姓名</label>
+										<input name="form_name" type="text" class="fillet_all" id="form_name" />
+									</p>
+									<p>
+										<label for="form_mail">電郵</label>
+										<input name="form_mail" type="text" class="fillet_all" id="form_mail" />
+									</p>
+								</div>
+								<div class="form1 fillet_all">
+									<p>
+										<label for="form_title">標題</label>
+										<input name="form_title" type="text" class="fillet_all" id="form_title" />
+									</p>
+									<p> <span class="form_title">評等</span><span class="form_content fillet_all"><img src="images/icon_star2.gif" alt="star" /><img src="images/icon_star2.gif" alt="star" /><img src="images/icon_star2.gif" alt="star" /><img src="images/icon_star2.gif" alt="star" /><img src="images/icon_star2.gif" alt="star" /></span> </p>
+									<p>
+										<label for="form_content">內容</label>
+										<textarea name="form_content" rows="5" class="fillet_all" id="form_content"></textarea>
+									</p>
+									<p>
+										<label for="form_verify">驗證</label>
+										<iframe id="verifybox" frameborder="0" border="0" framespacing="0" scrolling="No" src="verifyCode.html"></iframe>
+										<input type="text" class="fillet_all" style="width: 120px; float: right;" name="form_verify" id="form_verify" />
+									<div class="clear-b"></div>
+									</p>
+								</div>
+								<p>
+									<input name="form_send" type="button" class="btn btn0" value="送出" />
+								</p>
+							</form>
+						</div>
+						<div class="fields_c">
+							<dl class="list1">
+								<dt>
+									<div class="float-r"><span class="btn btn_X" title="刪除本筆留言">刪除</span></div>
+									<div class="spot_stars float-r"><img src="images/icon_star1.gif" alt="star" /><img src="images/icon_star1.gif" alt="star" /><img src="images/icon_star1.gif" alt="star" /><img src="images/icon_star1.gif" alt="star" /><img src="images/icon_star2.gif" alt="star" /></div>
+									留言標題留言標題留言標題留言標題留言標題留言標題留言標題
+									<div class="clear-b"></div>
+								</dt>
+								<dd>
+									<div class="fields_4">
+										<div class="img-s float-l"><span></span><a href="member_profile.html" title="瀏覽作者個人檔案"><img src="images/head_s.png" alt="member profile" /></a></div>
+										<div class="spot spot_XY overspots"><a href="member_profile.html" title="會員暱稱 會員暱稱 會員暱稱 會員暱稱">會員暱稱 會員暱稱 會員暱稱 會員暱稱</a></div>
+										<div class="color1b txt_S">2012-00-00 00:00:00 posted</div>
+									</div>
+									<p>留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。</p>
+									<div class="clear-b"></div>
+								</dd>
+								<dt>
+									<div class="float-r"><span class="btn btn_X" title="刪除本筆留言">刪除</span></div>
+									<div class="spot_stars float-r"><img src="images/icon_star1.gif" alt="star" /><img src="images/icon_star1.gif" alt="star" /><img src="images/icon_star1.gif" alt="star" /><img src="images/icon_star1.gif" alt="star" /><img src="images/icon_star2.gif" alt="star" /></div>
+									留言標題留言標題留言標題留言標題留言標題留言標題留言標題
+									<div class="clear-b"></div>
+								</dt>
+								<dd>
+									<div class="fields_4">
+										<div class="img-s float-l"><span></span><a href="member_profile.html" title="瀏覽作者個人檔案"><img src="images/head_s.png" alt="member profile" /></a></div>
+										<div class="spot spot_XY overspots"><a href="member_profile.html" title="會員暱稱 會員暱稱 會員暱稱 會員暱稱">會員暱稱 會員暱稱 會員暱稱 會員暱稱</a></div>
+										<div class="color1b txt_S">2012-00-00 00:00:00 posted</div>
+									</div>
+									<p>留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。</p>
+									<div class="clear-b"></div>
+								</dd>
+								<dt>
+									<div class="float-r"><span class="btn btn_X" title="刪除本筆留言">刪除</span></div>
+									<div class="spot_stars float-r"><img src="images/icon_star1.gif" alt="star" /><img src="images/icon_star1.gif" alt="star" /><img src="images/icon_star1.gif" alt="star" /><img src="images/icon_star1.gif" alt="star" /><img src="images/icon_star2.gif" alt="star" /></div>
+									留言標題留言標題留言標題留言標題留言標題留言標題留言標題
+									<div class="clear-b"></div>
+								</dt>
+								<dd>
+									<div class="fields_4">
+										<div class="img-s float-l"><span></span><a href="member_profile.html" title="瀏覽作者個人檔案"><img src="images/head_s.png" alt="member profile" /></a></div>
+										<div class="spot spot_XY overspots"><a href="member_profile.html" title="會員暱稱 會員暱稱 會員暱稱 會員暱稱">會員暱稱 會員暱稱 會員暱稱 會員暱稱</a></div>
+										<div class="color1b txt_S">2012-00-00 00:00:00 posted</div>
+									</div>
+									<p>留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。留言內容。</p>
+									<div class="clear-b"></div>
+								</dd>
+							</dl>
+							<p><a class="btn btn3 fillet_all" href="#">瀏覽更多內容 &gt;&gt;</a></p>
+						</div>
+						<div class="clear-b"></div>
+					</div>
+					<div id="TabBox2_content3">
+						<h5>
+							<div title="本地點相關網站或網誌介紹">相關連結</div>
+						</h5>
+						<div class="clear-b"></div>
+						<div class="fields_s">
+							<p class="mark_txt">※如有帳號請先<a href="login.html" title="導向登入頁面（登入後會自動返回本頁）。">登入</a>，即可免填姓名電郵。</p>
+							<form id="form2" name="form2" method="post" action="">
+								<div class="form1 fillet_all">
+									<p>
+										<label for="form_name">姓名</label>
+										<input name="form_name" type="text" class="fillet_all" id="form_name" />
+									</p>
+									<p>
+										<label for="form_mail">電郵</label>
+										<input name="form_mail" type="text" class="fillet_all" id="form_mail" />
+									</p>
+								</div>
+								<div class="form1 fillet_all">
+									<p>
+										<label for="form_title">標題</label>
+										<input name="form_title" type="text" class="fillet_all" id="form_title" />
+									</p>
+									<p>
+										<label for="form_link">網址</label>
+										<input name="form_link" type="text" class="fillet_all" id="form_link" />
+									</p>
+									<p>
+										<label for="form_content">描述</label>
+										<textarea name="form_content" rows="5" class="fillet_all" id="form_content"></textarea>
+									</p>
+									<p>
+										<label for="form_verify">驗證</label>
+										<iframe id="verifybox" frameborder="0" border="0" framespacing="0" scrolling="No" src="verifyCode.html"></iframe>
+										<input type="text" class="fillet_all" style="width: 120px; float: right;" name="form_verify" id="form_verify" />
+									<div class="clear-b"></div>
+									</p>
+								</div>
+								<p>
+									<input name="form_send" type="button" class="btn btn0" value="送出" />
+								</p>
+							</form>
+						</div>
+						<div class="fields_c">
+							<dl class="list1">
+								<dt>
+									<div class="float-r"><span class="btn btn_X" title="刪除本筆連結">刪除</span></div>
+									<a href="#" target="_blank">連結標題連結標題連結標題連結標題</a></dt>
+								<dd>
+									<div class="fields_4">
+										<div class="img-s float-l"><span></span><a href="member_profile.html" title="瀏覽作者個人檔案"><img src="images/head_s.png" alt="member profile" /></a></div>
+										<div class="spot spot_XY overspots"><a href="member_profile.html" title="會員暱稱 會員暱稱 會員暱稱 會員暱稱">會員暱稱 會員暱稱 會員暱稱 會員暱稱</a></div>
+										<div class="color1b txt_S">2012-00-00 00:00:00 posted</div>
+									</div>
+									<p>連結描述。連結描述。連結描述。連結描述。連結描述。連結描述。連結描述。連結描述。</p>
+									<div class="clear-b"></div>
+								</dd>
+								<dt>
+									<div class="float-r"><span class="btn btn_X" title="刪除本筆連結">刪除</span></div>
+									<a href="#" target="_blank">連結標題連結標題連結標題連結標題</a></dt>
+								<dd>
+									<div class="fields_4">
+										<div class="img-s float-l"><span></span><a href="member_profile.html" title="瀏覽作者個人檔案"><img src="images/head_s.png" alt="member profile" /></a></div>
+										<div class="spot spot_XY overspots"><a href="member_profile.html" title="會員暱稱 會員暱稱 會員暱稱 會員暱稱">會員暱稱 會員暱稱 會員暱稱 會員暱稱</a></div>
+										<div class="color1b txt_S">2012-00-00 00:00:00 posted</div>
+									</div>
+									<p>連結描述。連結描述。連結描述。連結描述。連結描述。連結描述。連結描述。連結描述。</p>
+									<div class="clear-b"></div>
+								</dd>
+								<dt>
+									<div class="float-r"><span class="btn btn_X" title="刪除本筆連結">刪除</span></div>
+									<a href="#" target="_blank">連結標題連結標題連結標題連結標題</a></dt>
+								<dd>
+									<div class="fields_4">
+										<div class="img-s float-l"><span></span><a href="member_profile.html" title="瀏覽作者個人檔案"><img src="images/head_s.png" alt="member profile" /></a></div>
+										<div class="spot spot_XY overspots"><a href="member_profile.html" title="會員暱稱 會員暱稱 會員暱稱 會員暱稱">會員暱稱 會員暱稱 會員暱稱 會員暱稱</a></div>
+										<div class="color1b txt_S">2012-00-00 00:00:00 posted</div>
+									</div>
+									<p>連結描述。連結描述。連結描述。連結描述。連結描述。連結描述。連結描述。連結描述。</p>
+									<div class="clear-b"></div>
+								</dd>
+							</dl>
+							<p><a class="btn btn3 fillet_all" href="#">瀏覽更多內容 &gt;&gt;</a></p>
+						</div>
+						<div class="clear-b"></div>
+					</div>
+				</div>
+				<div class="clear-b"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Main End -->
+	<div class="clear-b"></div>
+	<!-- Footer Start -->
+	<div id="Footer">
+		<hr class="line" />
+		<a href="#" title="回到最上面" class="btn_top fillet_bottom">▲TOP</a>
+		<ul class="list1">
+			<li><a href="http://cakephp.org/" target="_blank"><img src="http://travel.olc.tw/img/cake.power.gif" alt="CakePHP: the rapid development php framework" width="98" height="13" border="0"></a> <a href="http://olc.tw/" target="_blank">就這間電腦工作室</a></li>
+			<li><a href="about_us.html">關於我們</a></li>
+			<li><a href="service_agreement.html">會員服務條款</a></li>
+		</ul>
+		<div class="clear-b"></div>
+	</div>
+	<!-- Footer End -->
+	<div class="clear-b"></div>
+</div>
+<div id="dialogArea">
+	<ol>
+		<li><a href="#" title="區域名稱" target="_blank">區域名稱</a></li>
+		<li><a href="#" title="區域名稱" target="_blank">區域名稱</a></li>
+		<li><a href="#" title="區域名稱" target="_blank">區域名稱</a></li>
+		<li><a href="#" title="區域名稱" target="_blank">區域名稱</a></li>
+		<li><a href="#" title="區域名稱" target="_blank">區域名稱</a></li>
+		<li><a href="#" title="區域名稱" target="_blank">區域名稱</a></li>
+		<li><a href="#" title="區域名稱" target="_blank">區域名稱</a></li>
+		<li><a href="#" title="區域名稱" target="_blank">區域名稱</a></li>
+		<li><a href="#" title="區域名稱" target="_blank">區域名稱</a></li>
+		<li><a href="#" title="區域名稱" target="_blank">區域名稱</a></li>
+	</ol>
+	<a class="btn btn3 fillet_all" href="#">更多區域 &gt;&gt;</a> </div>
+<div id="dialogPoint">
+	<ol>
+		<li><a href="point_box.html" class="lightbox_page" title="地點名稱" target="_blank">地點名稱</a></li>
+		<li><a href="point_box.html" class="lightbox_page" title="地點名稱" target="_blank">地點名稱</a></li>
+		<li><a href="point_box.html" class="lightbox_page" title="地點名稱" target="_blank">地點名稱</a></li>
+		<li><a href="point_box.html" class="lightbox_page" title="地點名稱" target="_blank">地點名稱</a></li>
+		<li><a href="point_box.html" class="lightbox_page" title="地點名稱" target="_blank">地點名稱</a></li>
+		<li><a href="point_box.html" class="lightbox_page" title="地點名稱" target="_blank">地點名稱</a></li>
+		<li><a href="point_box.html" class="lightbox_page" title="地點名稱" target="_blank">地點名稱</a></li>
+		<li><a href="point_box.html" class="lightbox_page" title="地點名稱" target="_blank">地點名稱</a></li>
+		<li><a href="point_box.html" class="lightbox_page" title="地點名稱" target="_blank">地點名稱</a></li>
+		<li><a href="point_box.html" class="lightbox_page" title="地點名稱" target="_blank">地點名稱</a></li>
+	</ol>
+	<a class="btn btn3 fillet_all" href="#">更多地點 &gt;&gt;</a> </div>
+<div id="dialogSchedule">
+	<dl class="list4">
+		<dt class="bg_gary1">行程基本資訊</dt>
+		<dd>
+			<ul class="list3 txt_N">
+				<li class="fields_1 table">
+					<div class="table-cell table_td_15p">
+						<label>行程標題</label>
+					</div>
+					<div class="table-cell table_td_85p">
+						<input type="text" class="textBox_XL" value="我的行程表" />
+					</div>
+				</li>
+				<li class="fields_1 table">
+					<div class="fields_3 table">
+						<div class="table-cell table_td_15p">
+							<label>活動天數</label>
+						</div>
+						<div class="table-cell table_td_85p">
+							<input type="text" class="textBox_S" value="1" />
+						</div>
+					</div>
+					<div class="fields_3 table">
+						<div class="table-cell table_td_15p">
+							<label>參與人數</label>
+						</div>
+						<div class="table-cell table_td_85p">
+							<input type="text" class="textBox_S" value="1" />
+						</div>
+					</div>
+					<div class="fields_3 table">
+						<div class="table-cell table_td_15p">
+							<label>出發時間</label>
+						</div>
+						<div class="table-cell table_td_85p">
+							<input type="text" class="textBox_L" value="0000-00-00 00:00" />
+							<a href="#" title="點選日曆選擇日期" class="icon icon_calendar">選擇</a> </div>
+					</div>
+				</li>
+				<li class="fields_1 table">
+					<div class="table-cell table_td_15p">
+						<label>出發地點</label>
+					</div>
+					<div class="table-cell table_td_35p">
+						<input name="" type="text" class="textBox_L" />
+					</div>
+					<div class="table-cell table_td_25p"> <a href="#" class="icon icon_search float-l" title="以座標查詢Google Map上的地址">地址</a> </div>
+					<div class="table-cell table_td_25p"> <a href="#" class="icon icon_search float-l" title="以地址查詢Google Map上的座標">座標</a> </div>
+				</li>
+				<li class="fields_2 table">
+					<div class="table-cell table_td_15p">
+						<label>地理經度</label>
+					</div>
+					<div class="table-cell table_td_85p">
+						<input name="" type="text" class="textBox_XL" />
+					</div>
+				</li>
+				<li class="fields_2 table">
+					<div class="table-cell table_td_15p">
+						<label>地理緯度</label>
+					</div>
+					<div class="table-cell table_td_85p">
+						<input name="" type="text" class="textBox_XL" />
+					</div>
+				</li>
+				<li class="fields_1 table">
+					<div class="table-cell table_td_15p">
+						<label>行程簡介</label>
+					</div>
+					<div class="table-cell table_td_85p">
+						<textarea rows="3" class="textBox_XL"></textarea>
+					</div>
+				</li>
+			</ul>
+			<div class="clear-b"></div>
+			<div class="line">
+				<input type="button" class="btn btn2 fillet_all" value="儲存" />
+				<input type="button" class="btn btn1 fillet_all" value="取消" />
+				<a href="#">刪除本行程</a> </div>
+		</dd>
+	</dl>
+</div>
+<div id="dialogImport">
+	<ul class="steps_menu">
+		<li class="fields_4 current"> <strong>Step1</strong>
+			<p>選擇資料來源</p>
+		</li>
+		<li class="fields_4"> <strong>Step2</strong>
+			<p>選擇匯入位置</p>
+		</li>
+		<li class="fields_4"> <strong>Step3</strong>
+			<p>確認匯入資訊</p>
+		</li>
+		<li class="fields_4"> <strong>Step4</strong>
+			<p>完成</p>
+		</li>
+	</ul>
+	<p class="clear-b"></p>
+	<h2 class="title">選擇資料來源</h2>
+	<ul class="list2 txt_N">
+		<li class="table">
+			<div class="table-cell_center table_td_5p bg_gary1"></div>
+			<div class="table-cell_center bg_gary1">行程名稱</div>
+			<div class="table-cell_center table_td_25p bg_gary1">資料節取方式</div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_5p">
+				<input name="" type="radio" value="" checked="checked" />
+			</div>
+			<div class="table-cell_middle"> <span class="color1a">0000-00-00 ~ 0000-00-00</span><br />
+				<a href="schedule_content.html" target="_blank">行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字</a></div>
+			<div class="table-cell_middle table_td_25p">
+				<input name="" type="radio" value="" checked="checked" />
+				全部日程
+				<input name="" type="radio" value="" />
+				只取地點<br />
+				<input name="" type="radio" value="" />
+				第
+				<input type="text" class="textBoxS" value="1,2,3,N,100" />
+				天 </div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_5p">
+				<input name="" type="radio" value="" />
+			</div>
+			<div class="table-cell_middle"> <span class="color1a">0000-00-00 ~ 0000-00-00</span><br />
+				<a href="schedule_content.html" target="_blank">行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字</a></div>
+			<div class="table-cell_middle table_td_25p">
+				<input name="" type="radio" value="" checked="checked" />
+				全部日程
+				<input name="" type="radio" value="" />
+				只取地點<br />
+				<input name="" type="radio" value="" />
+				第
+				<input type="text" class="textBoxS" value="1,2,3,N,100" />
+				天 </div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_5p">
+				<input name="" type="radio" value="" />
+			</div>
+			<div class="table-cell_middle"> <span class="color1a">0000-00-00 ~ 0000-00-00</span><br />
+				<a href="schedule_content.html" target="_blank">行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字</a></div>
+			<div class="table-cell_middle table_td_25p">
+				<input name="" type="radio" value="" checked="checked" />
+				全部日程
+				<input name="" type="radio" value="" />
+				只取地點<br />
+				<input name="" type="radio" value="" />
+				第
+				<input type="text" class="textBoxS" value="1,2,3,N,100" />
+				天 </div>
+		</li>
+	</ul>
+	<p>
+		<input type="button" class="btn btn2 fillet_all" value="下一步" />
+	</p>
+	<p class="clear-b"></p>
+	<h2 class="title">選擇匯入位置</h2>
+	<h3 class="title">行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字</h3>
+	<ul class="list2 txt_N">
+		<li class="table">
+			<div class="table-cell_center table_td_5p bg_gary1"></div>
+			<div class="table-cell_center table_td_25p bg_gary1">選擇插入哪一天</div>
+			<div class="table-cell_center bg_gary1">日程內容</div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_5p">
+				<input name="" type="radio" value="" checked="checked" />
+			</div>
+			<div class="table-cell_center table-cell_middle table_td_25p">第 1 天
+				<input name="" type="radio" value="" />
+				之前
+				<input name="" type="radio" value="" checked="checked" />
+				之後 <br />
+				<span class="color1a">00-00-00 (一)</span></div>
+			<div class="table-cell_middle">日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字<br />
+				<span class="color1a">地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱</span></div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_5p">
+				<input name="" type="radio" value="" />
+			</div>
+			<div class="table-cell_center table-cell_middle table_td_25p">第 2 天 之後<br />
+				<span class="color1a">00-00-00 (一)</span></div>
+			<div class="table-cell_middle">日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字<br />
+				<span class="color1a">地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱</span></div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_5p">
+				<input name="" type="radio" value="" />
+			</div>
+			<div class="table-cell_center table-cell_middle table_td_25p">第 3 天 之後<br />
+				<span class="color1a">00-00-00 (一)</span></div>
+			<div class="table-cell_middle">日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字<br />
+				<span class="color1a">地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱</span></div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_5p">
+				<input name="" type="radio" value="" />
+			</div>
+			<div class="table-cell_center table-cell_middle table_td_25p">第 N 天 之後<br />
+				<span class="color1a">00-00-00 (一)</span></div>
+			<div class="table-cell_middle">日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字<br />
+				<span class="color1a">地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱</span></div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_5p">
+				<input name="" type="radio" value="" />
+			</div>
+			<div class="table-cell_center table-cell_middle table_td_25p">第 100 天 之後<br />
+				<span class="color1a">00-00-00 (一)</span></div>
+			<div class="table-cell_middle">日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字<br />
+				<span class="color1a">地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱</span></div>
+		</li>
+	</ul>
+	<p>
+		<input type="button" class="btn btn1 fillet_all" value="上一步" />
+		<input type="button" class="btn btn2 fillet_all" value="下一步" />
+	</p>
+	<p class="clear-b"></p>
+	<h2 class="title">確認匯入資訊</h2>
+	<h3 class="title">資料來源</h3>
+	<ul class="list2 txt_N">
+		<li class="table">
+			<div class="table-cell_center bg_gary1">行程名稱</div>
+			<div class="table-cell_center table_td_25p bg_gary1">資料節取方式</div>
+		</li>
+		<li class="table">
+			<div class="table-cell_middle"> <span class="color1a">0000-00-00 ~ 0000-00-00</span><br />
+				<a href="schedule_content.html" target="_blank">行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字</a></div>
+			<div class="table-cell_middle table_td_25p">全部日程</div>
+		</li>
+	</ul>
+	<p class="clear-b"></p>
+	<h3 class="title">匯入位置</h3>
+	<ul class="list2 txt_N">
+		<li class="table">
+			<div class="table-cell_center table_td_25p bg_gary1">選擇插入哪一天</div>
+			<div class="table-cell_center bg_gary1">日程內容</div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_25p">第 1 天 之後<br />
+				<span class="color1a">00-00-00 (一)</span></div>
+			<div class="table-cell_middle">日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字<br />
+				<span class="color1a">地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱</span></div>
+		</li>
+	</ul>
+	<p>
+		<input type="button" class="btn btn1 fillet_all" value="上一步" />
+		<input type="button" class="btn btn2 fillet_all" value="下一步" />
+	</p>
+	<p class="clear-b"></p>
+	<h2 class="title">完成</h2>
+	<p>
+		<input type="button" class="btn btn1 fillet_all" value="上一步" />
+		<a href="#" class="btn btn2 fillet_all">關閉視窗</a></p>
+</div>
+<div id="dialogExport">
+	<ul class="steps_menu">
+		<li class="fields_4 current"> <strong>Step1</strong>
+			<p>選擇資料來源</p>
+		</li>
+		<li class="fields_4"> <strong>Step2</strong>
+			<p>選擇匯出位置</p>
+		</li>
+		<li class="fields_4"> <strong>Step3</strong>
+			<p>確認匯出資訊</p>
+		</li>
+		<li class="fields_4"> <strong>Step4</strong>
+			<p>完成</p>
+		</li>
+	</ul>
+	<p class="clear-b"></p>
+	<h2 class="title">選擇資料來源</h2>
+	<h3 class="title">行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字</h3>
+	<ul class="list2 txt_N">
+		<li class="table">
+			<div class="table-cell_center table_td_5p bg_gary1">
+				<input name="" type="checkbox" value="" checked="checked" title="全部" />
+			</div>
+			<div class="table-cell_center table_td_15p bg_gary1">日期</div>
+			<div class="table-cell_center bg_gary1">日程內容</div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_5p">
+				<input name="" type="checkbox" value="" checked="checked" />
+			</div>
+			<div class="table-cell_center table-cell_middle table_td_15p">第 1 天<br />
+				<span class="color1a">00-00-00 (一)</span></div>
+			<div class="table-cell_middle">日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字<br />
+				<span class="color1a">地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱</span></div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_5p">
+				<input name="" type="checkbox" value="" checked="checked" />
+			</div>
+			<div class="table-cell_center table-cell_middle table_td_15p">第 2 天<br />
+				<span class="color1a">00-00-00 (一)</span></div>
+			<div class="table-cell_middle">日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字<br />
+				<span class="color1a">地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱</span></div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_5p">
+				<input name="" type="checkbox" value="" checked="checked" />
+			</div>
+			<div class="table-cell_center table-cell_middle table_td_15p">第 3 天<br />
+				<span class="color1a">00-00-00 (一)</span></div>
+			<div class="table-cell_middle">日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字<br />
+				<span class="color1a">地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱</span></div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_5p">
+				<input name="" type="checkbox" value="" checked="checked" />
+			</div>
+			<div class="table-cell_center table-cell_middle table_td_15p">第 N 天<br />
+				<span class="color1a">00-00-00 (一)</span></div>
+			<div class="table-cell_middle">日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字<br />
+				<span class="color1a">地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱</span></div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_5p">
+				<input name="" type="checkbox" value="" checked="checked" />
+			</div>
+			<div class="table-cell_center table-cell_middle table_td_15p">第 100 天<br />
+				<span class="color1a">00-00-00 (一)</span></div>
+			<div class="table-cell_middle">日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字<br />
+				<span class="color1a">地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱</span></div>
+		</li>
+	</ul>
+	<p>
+		<input type="button" class="btn btn2 fillet_all" value="下一步" />
+	</p>
+	<p class="clear-b"></p>
+	<h2 class="title">選擇匯出位置</h2>
+	<ul class="list2 txt_N">
+		<li class="table">
+			<div class="table-cell_center table_td_5p bg_gary1"></div>
+			<div class="table-cell_center bg_gary1">行程名稱</div>
+			<div class="table-cell_center table_td_15p bg_gary1">選擇插入哪一天</div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_5p">
+				<input name="" type="radio" value="" checked="checked" />
+			</div>
+			<div class="table-cell_middle"> <span class="color1a">0000-00-00 ~ 0000-00-00</span><br />
+				<a href="schedule_content.html" target="_blank">行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字</a></div>
+			<div class="table-cell_center table-cell_middle table_td_15p">
+				<select name="select">
+					<option selected="selected">第 1 天</option>
+					<option>第 2 天</option>
+					<option>第 3 天</option>
+					<option>第 N 天</option>
+					<option>第 100 天</option>
+				</select>
+				<br />
+				<input name="" type="radio" value="" checked="checked" />
+				之前
+				<input name="" type="radio" value="" />
+				之後 </div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_5p">
+				<input name="" type="radio" value="" />
+			</div>
+			<div class="table-cell_middle"> <span class="color1a">0000-00-00 ~ 0000-00-00</span><br />
+				<a href="schedule_content.html" target="_blank">行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字</a></div>
+			<div class="table-cell_center table-cell_middle table_td_15p">
+				<select name="select">
+					<option selected="selected">第 1 天</option>
+					<option>第 2 天</option>
+					<option>第 3 天</option>
+					<option>第 N 天</option>
+					<option>第 100 天</option>
+				</select>
+				<br />
+				<input name="" type="radio" value="" checked="checked" />
+				之前
+				<input name="" type="radio" value="" />
+				之後 </div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_5p">
+				<input name="" type="radio" value="" />
+			</div>
+			<div class="table-cell_middle"> <span class="color1a">0000-00-00 ~ 0000-00-00</span><br />
+				<a href="schedule_content.html" target="_blank">行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字</a></div>
+			<div class="table-cell_center table-cell_middle table_td_15p">
+				<select name="select">
+					<option selected="selected">第 1 天</option>
+					<option>第 2 天</option>
+					<option>第 3 天</option>
+					<option>第 N 天</option>
+					<option>第 100 天</option>
+				</select>
+				<br />
+				<input name="" type="radio" value="" checked="checked" />
+				之前
+				<input name="" type="radio" value="" />
+				之後 </div>
+		</li>
+	</ul>
+	<p>
+		<input type="button" class="btn btn1 fillet_all" value="上一步" />
+		<input type="button" class="btn btn2 fillet_all" value="下一步" />
+	</p>
+	<p class="clear-b"></p>
+	<h2 class="title">確認匯出資訊</h2>
+	<h3 class="title">資料來源</h3>
+	<ul class="list2 txt_N">
+		<li class="table">
+			<div class="table-cell_center table_td_15p bg_gary1">日期</div>
+			<div class="table-cell_center bg_gary1">日程內容</div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_15p">第 1 天<br />
+				<span class="color1a">00-00-00 (一)</span></div>
+			<div class="table-cell_middle">日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字<br />
+				<span class="color1a">地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱</span></div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_15p">第 2 天<br />
+				<span class="color1a">00-00-00 (一)</span></div>
+			<div class="table-cell_middle">日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字<br />
+				<span class="color1a">地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱</span></div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_15p">第 3 天<br />
+				<span class="color1a">00-00-00 (一)</span></div>
+			<div class="table-cell_middle">日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字<br />
+				<span class="color1a">地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱</span></div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_15p">第 N 天<br />
+				<span class="color1a">00-00-00 (一)</span></div>
+			<div class="table-cell_middle">日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字<br />
+				<span class="color1a">地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱</span></div>
+		</li>
+		<li class="table">
+			<div class="table-cell_center table-cell_middle table_td_15p">第 100 天<br />
+				<span class="color1a">00-00-00 (一)</span></div>
+			<div class="table-cell_middle">日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字日程標題建議限４０字<br />
+				<span class="color1a">地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱 &gt; 地點名稱</span></div>
+		</li>
+	</ul>
+	<p class="clear-b"></p>
+	<h3 class="title">匯出位置</h3>
+	<ul class="list2 txt_N">
+		<li class="table">
+			<div class="table-cell_center bg_gary1">行程名稱</div>
+			<div class="table-cell_center table_td_15p bg_gary1">選擇插入哪一天</div>
+		</li>
+		<li class="table">
+			<div class="table-cell_middle"> <span class="color1a">0000-00-00 ~ 0000-00-00</span><br />
+				<a href="schedule_content.html" target="_blank">行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字</a></div>
+			<div class="table-cell_center table-cell_middle table_td_15p">第 1 天 之前</div>
+		</li>
+	</ul>
+	<p>
+		<input type="button" class="btn btn1 fillet_all" value="上一步" />
+		<input type="button" class="btn btn2 fillet_all" value="下一步" />
+	</p>
+	<p class="clear-b"></p>
+	<h2 class="title">完成</h2>
+	<p>
+		<input type="button" class="btn btn1 fillet_all" value="上一步" />
+		<a href="#" class="btn btn2 fillet_all">關閉視窗</a></p>
+	<p>立即前往編輯：<a href="schedule_content.html" class="mark_txt">行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字行程標題建議限４０字</a></p>
+	<p class="clear-b"></p>
+</div>
+<div id="dialogCompanion">
+	<h2 class="title float-l">本站會員</h2>
+	<div class="float-r">
+		<label>同行者</label>
+		<input name="" type="text" class="textBoxS" />
+		<label>同行描述</label>
+		<input name="" type="text" class="textBoxM" />
+		<input type="button" class="btn btn2 fillet_all" value="新增" />
+	</div>
+	<div class="clear-b"></div>
+	<ul class="list2 txt_N">
+		<li class="table">
+			<div class="table-cell_center table_td_25p bg_gary1">同行者</div>
+			<div class="table-cell_center bg_gary1">同行描述</div>
+			<div class="table-cell_center table_td_10p bg_gary1">功能</div>
+		</li>
+		<li class="table">
+			<div class="table-cell_middle table_td_25p">
+				<div class="img-s float-l"><span></span><a href="member_profile.html"><img src="images/head_s.png" alt="member profile" /></a></div>
+				<div class="spot spot_XY"><a href="member_profile.html" title="會員暱稱 會員暱稱 會員暱稱 會員暱稱">會員暱稱 會員暱稱 會員暱稱 會員暱稱</a></div>
+			</div>
+			<div class="table-cell_middle">同行描述。同行描述。同行描述。同行描述。同行描述。同行描述。同行描述。同行描述。</div>
+			<div class="table-cell_center table-cell_middle table_td_10p">
+				<ul class="list1">
+					<li><a href="#" class="btn btn_edit" title="編輯資料">編輯</a></li>
+					<li><a href="#" class="btn btn_delete" title="刪除資料">刪除</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="table">
+			<div class="table-cell_middle table_td_25p">
+				<div class="img-s float-l"><span></span><a href="member_profile.html"><img src="images/head_s.png" alt="member profile" /></a></div>
+				<div class="spot spot_XY"><a href="member_profile.html" title="會員暱稱 會員暱稱 會員暱稱 會員暱稱">會員暱稱 會員暱稱 會員暱稱 會員暱稱</a></div>
+			</div>
+			<div class="table-cell_middle">同行描述。同行描述。同行描述。同行描述。同行描述。同行描述。同行描述。同行描述。</div>
+			<div class="table-cell_center table-cell_middle table_td_10p">
+				<ul class="list1">
+					<li><a href="#" class="btn btn_edit" title="編輯資料">編輯</a></li>
+					<li><a href="#" class="btn btn_delete" title="刪除資料">刪除</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="table">
+			<div class="table-cell_middle table_td_25p">
+				<div class="img-s float-l"><span></span><a href="member_profile.html"><img src="images/head_s.png" alt="member profile" /></a></div>
+				<div class="spot spot_XY"><a href="member_profile.html" title="會員暱稱 會員暱稱 會員暱稱 會員暱稱">會員暱稱 會員暱稱 會員暱稱 會員暱稱</a></div>
+			</div>
+			<div class="table-cell_middle">同行描述。同行描述。同行描述。同行描述。同行描述。同行描述。同行描述。同行描述。</div>
+			<div class="table-cell_center table-cell_middle table_td_10p">
+				<ul class="list1">
+					<li><a href="#" class="btn btn_edit" title="編輯資料">編輯</a></li>
+					<li><a href="#" class="btn btn_delete" title="刪除資料">刪除</a></li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+	<p class="clear-b"></p>
+	<h2 class="title float-l">非本站會員</h2>
+	<div class="float-r">
+		<label>同行者</label>
+		<input name="" type="text" class="textBoxS" />
+		<label>同行描述</label>
+		<input name="" type="text" class="textBoxM" />
+		<input type="button" class="btn btn2 fillet_all" value="新增" />
+	</div>
+	<div class="clear-b"></div>
+	<ul class="list2 txt_N">
+		<li class="table">
+			<div class="table-cell_center table_td_25p bg_gary1">同行者</div>
+			<div class="table-cell_center bg_gary1">同行描述</div>
+			<div class="table-cell_center table_td_10p bg_gary1">功能</div>
+		</li>
+		<li class="table">
+			<div class="table-cell_middle table_td_25p">
+				同行者姓名
+			</div>
+			<div class="table-cell_middle">同行描述。同行描述。同行描述。同行描述。同行描述。同行描述。同行描述。同行描述。</div>
+			<div class="table-cell_center table-cell_middle table_td_10p">
+				<ul class="list1">
+					<li><a href="#" class="btn btn_edit" title="編輯資料">編輯</a></li>
+					<li><a href="#" class="btn btn_delete" title="刪除資料">刪除</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="table">
+			<div class="table-cell_middle table_td_25p">
+				同行者姓名
+			</div>
+			<div class="table-cell_middle">同行描述。同行描述。同行描述。同行描述。同行描述。同行描述。同行描述。同行描述。</div>
+			<div class="table-cell_center table-cell_middle table_td_10p">
+				<ul class="list1">
+					<li><a href="#" class="btn btn_edit" title="編輯資料">編輯</a></li>
+					<li><a href="#" class="btn btn_delete" title="刪除資料">刪除</a></li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+	<p class="clear-b"></p>
+</div>
+</body>
+</html>
+
+<!-- include Tabs plugin -->
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/lib.js" type="text/javascript"></script>
+<!-- include DivBox plugin -->
+<link type="text/css" media="screen" rel="stylesheet" href="js/jquery-ui.css" />
+<script src="js/jquery-ui.js" type="text/javascript"></script>
+<!-- include Lightbox plugin -->
+<link type="text/css" media="screen" rel="stylesheet" href="js/colorbox.css" />
+<script type="text/javascript" src="js/colorbox.js"></script>
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.all.2.72.js"></script>
+<script type="text/javascript">
+	<!--
+  // ### 宣告沒有預設值的tab，第一個參數要跟物件名稱一樣 ex. var XXX = new ( "XXX" ....
+  // ( tabN的tab, contentN的content, 全部有幾組, content box, 是否要隨機選項true/false )
+  var TabBox = new _randomTab( "TabBox2_tab", "TabBox2_content", 3, "TabBox2_contentbox", false );
+	// ### 宣告一套有預設值的tab，第一個參數要跟物件名稱一樣 ex. var XXX = new ( "XXX" ....
+	// ( tabN的tab, contentN的content, 全部有幾組, 多久要跳回預設值, 預設的content ID, content box )
+	var InfoBox = new _defaultTab( "InfoBox_tab", "InfoBox_content", 2, 0, "InfoBox_content0", "InfoBox_contentbox" );
+	var CartBox = new _defaultTab( "CartLine", "CartList", 2, 0, "CartList0", "CartBox_contentbox" );
+	
+  $(document).ready(function(){
+		
+		// ### 無預設值的TAB
+  	TabBox.dispCurr();
+    RT_ActionSet( TabBox );
+		// ### 有預設值的TAB
+		InfoBox.goDefault();
+		DT_ActionSet( InfoBox );
+		CartBox.goDefault();
+		DT_ActionSet( CartBox );
+	
+  	// ### light boxs
+		//開啟網頁
+		$("a.lightbox_page").colorbox({ iframe:true, rel:'nofollow', innerWidth: 800, innerHeight: 440, opacity: 0.3});
+		//開啟地圖
+		$("a.lightbox_map").colorbox({ iframe:true, rel:'nofollow', innerWidth: "80%", innerHeight: "80%", opacity: 0.3});
+		//開啟圖片
+		$("a.lightbox_pic").colorbox({opacity: 0.3});
+		
+		//開啟區域列表
+		$('a.dialogArea').click(function() {
+			$('div#dialogArea').dialog({
+				title: '行經區域 (100)',
+				draggable: true,
+				resizable: false
+			}).dialog('widget').position({
+				my: 'top',
+				at: 'bottom',
+				of: $('a.dialogArea')
+			});
+			return false;
+		});
+		
+		//開啟地點列表
+		$('a.dialogPoint').click(function() {
+			$('div#dialogPoint').dialog({
+				title: '行經地點 (1000)',
+				draggable: true,
+				resizable: false
+			}).dialog('widget').position({
+				my: 'top',
+				at: 'bottom',
+				of: $('a.dialogPoint')
+			});
+			return false;
+		});
+		
+		//開啟編輯介面
+		$('a.dialogSchedule').click(function() {
+			$('div#dialogSchedule').dialog({
+				title: '編輯行程基本資訊',
+				draggable: false,
+				resizable: false,
+				width: '900'
+			}).dialog('widget').position({
+				my: 'center',
+				at: 'center'
+			});
+			return false;
+		});
+		
+		//開啟匯入介面
+		$('a.dialogImport').click(function() {
+			$('div#dialogImport').dialog({
+				title: '將其他既有行程匯入本行程',
+				draggable: false,
+				resizable: false,
+				width: '900'
+			}).dialog('widget').position({
+				my: 'center',
+				at: 'center'
+			});
+			return false;
+		});
+		
+		//開啟匯出介面
+		$('a.dialogExport').click(function() {
+			$('div#dialogExport').dialog({
+				title: '將本行程匯出到其他既有行程',
+				draggable: false,
+				resizable: false,
+				width: '900'
+			}).dialog('widget').position({
+				my: 'center',
+				at: 'center'
+			});
+			return false;
+		});
+		
+		//開啟同行者編輯介面
+		$('a.dialogCompanion').click(function() {
+			$('div#dialogCompanion').dialog({
+				title: '同行者名單',
+				draggable: false,
+				resizable: false,
+				width: '900'
+			}).dialog('widget').position({
+				my: 'center',
+				at: 'center'
+			});
+			return false;
+		});
+			
+  });
+  // -->
+</script>

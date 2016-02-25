@@ -1,0 +1,198 @@
+diff -r webroot/talks/adm/index.php phpBB3/adm/index.php
+5c5
+< * @version $Id: index.php 9369 2009-03-16 12:08:38Z acydburn $
+---
+> * @version $Id: index.php 10200 2009-09-30 15:07:40Z acydburn $
+265a266,271
+> 	// Make sure there is no notice printed out for non-existent config options (we simply set them)
+> 	if (!isset($new[$config_key]))
+> 	{
+> 		$new[$config_key] = '';
+> 	}
+> 
+304d309
+< 		case 'select_multiple':
+343,347d347
+< 				if ($tpl_type[0] == 'select_multiple')
+< 				{
+< 					$new[$config_key] = @unserialize(trim($new[$config_key]));
+< 				}
+< 
+353,357c353
+< 			if ($tpl_type[0] == 'select_multiple')
+< 			{
+< 				$tpl = '<select id="' . $key . '" name="' . $name . '[]" multiple="multiple">' . $return . '</select>';
+< 			}
+< 			else if ($tpl_type[0] == 'select')
+---
+> 			if ($tpl_type[0] == 'select')
+
+diff -r webroot/talks/common.php phpBB3/common.php
+206c206
+< $cache		= new phpbb3_cache();
+---
+> $cache		= new cache();
+diff -r webroot/talks/config.php phpBB3/config.php
+1,21d0
+< <?php
+< // phpBB 3.0.x auto-generated configuration file
+< // Do not change anything in this file!
+< if(!class_exists('DATABASE_CONFIG')) {
+<     $path = dirname(dirname(dirname(__FILE__)));
+<     include_once($path . '/config/database.php');
+< }
+< $cakeDb = new DATABASE_CONFIG;
+< $dbms = $cakeDb->default['driver'];
+< $dbhost = $cakeDb->default['host'];
+< $dbport = '';
+< $dbname = $cakeDb->default['database'];
+< $dbuser = $cakeDb->default['login'];
+< $dbpasswd = $cakeDb->default['password'];
+< $table_prefix = 'talks_';
+< $acm_type = 'file';
+< $load_extensions = '';
+< 
+< @define('PHPBB_INSTALLED', true);
+< // @define('DEBUG', true);
+< // @define('DEBUG_EXTRA', true);
+\ 檔案末沒有 newline 字元
+diff -r webroot/talks/download/file.php phpBB3/download/file.php
+47c47
+< 	$cache = new phpbb3_cache();
+---
+> 	$cache = new cache();
+706c706
+< ?>
+---
+> ?>
+\ 檔案末沒有 newline 字元
+只在 webroot/talks/includes/auth 存在：auth_olc.php
+diff -r webroot/talks/includes/cache.php phpBB3/includes/cache.php
+23c23
+< class phpbb3_cache extends acm
+---
+> class cache extends acm
+444c444
+< ?>
+---
+> ?>
+\ 檔案末沒有 newline 字元
+diff -r webroot/talks/includes/functions.php phpBB3/includes/functions.php
+2872,2874d2871
+< 			if($redirect === 'facebook') {
+< 				return;
+< 			}
+2888,2894c2885,2886
+< 			//$redirect = meta_refresh(3, $redirect);
+< 			//trigger_error($message . '<br /><br />' . sprintf($l_redirect, '<a href="' . $redirect . '">', '</a>'));
+< 			trigger_error($message . '<script type="text/javascript">
+< //<![CDATA[
+< self.parent.location.reload(true);
+< //]]>
+< </script>');
+---
+> 			$redirect = meta_refresh(3, $redirect);
+> 			trigger_error($message . '<br /><br />' . sprintf($l_redirect, '<a href="' . $redirect . '">', '</a>'));
+4072,4079d4063
+< 	
+< 
+< 	$webRootPosition = strpos($_SERVER['PHP_SELF'], '/webroot');
+< 	if(FALSE !== $webRootPosition) {
+< 		$cakeUrl = substr($_SERVER['PHP_SELF'], 0, $webRootPosition);
+< 	} else {
+< 		$cakeUrl = substr($_SERVER['PHP_SELF'], 0, strpos($_SERVER['PHP_SELF'], '/talks'));
+< 	}
+4105d4088
+< 		'CAKE_URL'			=> $cakeUrl,
+diff -r webroot/talks/style.php phpBB3/style.php
+68c68
+< 	$cache = new phpbb3_cache();
+---
+> 	$cache = new cache();
+293c293
+< ?>
+---
+> ?>
+\ 檔案末沒有 newline 字元
+diff -r webroot/talks/styles/prosilver/template/overall_footer.html phpBB3/styles/prosilver/template/overall_footer.html
+46,60c46
+< <script type="text/javascript"> 
+< //<![CDATA[
+< if(undefined == parent.frames['talkFrame']) {
+< 	var targetUrl = document.location.href.substr(document.location.href.indexOf('talks') + 6)
+< 	.replace('&', '|');
+< 	document.location.href = cakeUrl + '/p/talks/?src=' + targetUrl;
+< }
+< var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+< document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+< try {
+< var pageTracker = _gat._getTracker("UA-11422344-1");
+< pageTracker._trackPageview();
+< } catch(err) {}
+< //]]>
+< </script>
+---
+> 
+diff -r webroot/talks/styles/prosilver/template/overall_header.html phpBB3/styles/prosilver/template/overall_header.html
+44d43
+< 	var cakeUrl = '{CAKE_URL}';
+112,113c111,116
+< 			<ul class="linklist navlinks">
+< 				<li class="icon-home"><a href="{U_INDEX}" accesskey="h">{L_INDEX}</a> <!-- BEGIN navlinks --> <strong>&#8249;</strong> <a href="{navlinks.U_VIEW_FORUM}">{navlinks.FORUM_NAME}</a><!-- END navlinks --></li>
+---
+> 			<div id="site-description">
+> 				<a href="{U_INDEX}" title="{L_INDEX}" id="logo">{SITE_LOGO_IMG}</a>
+> 				<h1>{SITENAME}</h1>
+> 				<p>{SITE_DESCRIPTION}</p>
+> 				<p class="skiplink"><a href="#start_here">{L_SKIP}</a></p>
+> 			</div>
+115,119d117
+< 				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="fontsizeup(); return false;" class="fontsize" title="{L_CHANGE_FONT_SIZE}">{L_CHANGE_FONT_SIZE}</a></li>
+< 				<!-- IF U_EMAIL_TOPIC --><li class="rightside"><a href="{U_EMAIL_TOPIC}" title="{L_EMAIL_TOPIC}" class="sendemail">{L_EMAIL_TOPIC}</a></li><!-- ENDIF -->
+< 				<!-- IF U_EMAIL_PM --><li class="rightside"><a href="{U_EMAIL_PM}" title="{L_EMAIL_PM}" class="sendemail">{L_EMAIL_PM}</a></li><!-- ENDIF -->
+< 				<!-- IF U_PRINT_TOPIC --><li class="rightside"><a href="{U_PRINT_TOPIC}" title="{L_PRINT_TOPIC}" accesskey="p" class="print">{L_PRINT_TOPIC}</a></li><!-- ENDIF -->
+< 				<!-- IF U_PRINT_PM --><li class="rightside"><a href="{U_PRINT_PM}" title="{L_PRINT_PM}" accesskey="p" class="print">{L_PRINT_PM}</a></li><!-- ENDIF -->
+121c119
+< 			<li class="rightside"><div id="search-box">
+---
+> 			<div id="search-box">
+125c123
+< 					<input class="button2" value="{L_SEARCH}" type="submit" /> |
+---
+> 					<input class="button2" value="{L_SEARCH}" type="submit" /><br />
+129c127
+< 			</div></li>
+---
+> 			</div>
+131a130,144
+> 			<span class="corners-bottom"><span></span></span></div>
+> 		</div>
+> 
+> 		<div class="navbar">
+> 			<div class="inner"><span class="corners-top"><span></span></span>
+> 
+> 			<ul class="linklist navlinks">
+> 				<li class="icon-home"><a href="{U_INDEX}" accesskey="h">{L_INDEX}</a> <!-- BEGIN navlinks --> <strong>&#8249;</strong> <a href="{navlinks.U_VIEW_FORUM}">{navlinks.FORUM_NAME}</a><!-- END navlinks --></li>
+> 
+> 				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="{L_CHANGE_FONT_SIZE}">{L_CHANGE_FONT_SIZE}</a></li>
+> 
+> 				<!-- IF U_EMAIL_TOPIC --><li class="rightside"><a href="{U_EMAIL_TOPIC}" title="{L_EMAIL_TOPIC}" class="sendemail">{L_EMAIL_TOPIC}</a></li><!-- ENDIF -->
+> 				<!-- IF U_EMAIL_PM --><li class="rightside"><a href="{U_EMAIL_PM}" title="{L_EMAIL_PM}" class="sendemail">{L_EMAIL_PM}</a></li><!-- ENDIF -->
+> 				<!-- IF U_PRINT_TOPIC --><li class="rightside"><a href="{U_PRINT_TOPIC}" title="{L_PRINT_TOPIC}" accesskey="p" class="print">{L_PRINT_TOPIC}</a></li><!-- ENDIF -->
+> 				<!-- IF U_PRINT_PM --><li class="rightside"><a href="{U_PRINT_PM}" title="{L_PRINT_PM}" accesskey="p" class="print">{L_PRINT_PM}</a></li><!-- ENDIF -->
+diff -r webroot/talks/ucp.php phpBB3/ucp.php
+95c95,98
+< 		//meta_refresh(3, append_sid("{$phpbb_root_path}index.$phpEx"));
+---
+> 		meta_refresh(3, append_sid("{$phpbb_root_path}index.$phpEx"));
+> 
+> 		$message = $message . '<br /><br />' . sprintf($user->lang['RETURN_INDEX'], '<a href="' . append_sid("{$phpbb_root_path}index.$phpEx") . '">', '</a> ');
+> 		trigger_error($message);
+97,103d99
+< 		//$message = $message . '<br /><br />' . sprintf($user->lang['RETURN_INDEX'], '<a href="' . append_sid("{$phpbb_root_path}index.$phpEx") . '">', '</a> ');
+< 		//trigger_error($message);
+< 		trigger_error($message . '<script type="text/javascript">
+< //<![CDATA[
+< self.parent.location.reload(true);
+< //]]>
+< </script>');

@@ -1,0 +1,483 @@
+@charset "utf-8";
+/****************************************************************基本結構*/
+/****************************************************************Page*/
+#Page {
+    /* 不固定寬度*/
+    max-width: 960px;
+    min-width: 320px;
+    /* 固定寬度 */
+    /* width: 960px; */
+    margin: 10px auto;
+}
+/****************************************************************Header*/
+#Header {
+}
+#Header div.fields_3 {
+    width: 320px;
+}
+/*Logo*/
+#Header h1 {
+    position: absolute;
+    top: 10px;
+    width: 140px;
+    height: 70px;
+    line-height: 300px;
+    display: block;
+    overflow: hidden;
+    background: url(images/icons.png) no-repeat 0px -440px;
+}
+#Header h1 a {
+    display: block;
+}
+/*Search*/
+#Search {
+    padding: 5px 0px;
+}
+/*Btns*/
+a.dbtn_main {
+    width: 40px;
+    height: 40px;
+    line-height: 300px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+    background: url(images/icons.png) no-repeat;
+}
+a.dbtn_route {
+    background-position: -145px -435px;
+}
+a.dbtn_route:hover, a.dbtn_route:active {
+    background-position: -145px -475px;
+}
+a.dbtn_point {
+    background-position: -190px -435px;
+}
+a.dbtn_point:hover, a.dbtn_point:active {
+    background-position: -190px -475px;
+}
+a.dbtn_area {
+    background-position: -235px -435px;
+}
+a.dbtn_area:hover, a.dbtn_area:active {
+    background-position: -235px -475px;
+}
+#Btns {
+    padding: 5px 0px;
+    margin: 0px;
+    list-style: none;
+    float: right;
+}
+#Btns li {
+    float: left;
+    width: 50px;
+}
+#Btns li a {
+    width: 40px;
+    height: 40px;
+    line-height: 300px;
+    display: block;
+    float: right;
+    overflow: hidden;
+    background: url(images/icons.png) no-repeat;
+}
+#Btns li.dbtn_route a {
+    background-position: -145px -435px;
+}
+#Btns li.dbtn_route a:hover, #Btns li.dbtn_route a:active, #Btns li.dbtn_route a.active {
+    background-position: -145px -475px;
+}
+#Btns li.dbtn_point a {
+    background-position: -190px -435px;
+}
+#Btns li.dbtn_point a:hover, #Btns li.dbtn_point a:active, #Btns li.dbtn_point a.active {
+    background-position: -190px -475px;
+}
+#Btns li.dbtn_area a {
+    background-position: -235px -435px;
+}
+#Btns li.dbtn_area a:hover, #Btns li.dbtn_area a:active, #Btns li.dbtn_area a.active {
+    background-position: -235px -475px;
+}
+/*Cart*/
+#Cart {
+    position: relative;
+    top: -30px;
+    z-index: 5;
+}
+/*感應按鈕*/
+#CartLine1 {
+}
+/*隱藏區塊*/
+#CartList1 {
+    display: none;
+}
+#CartLine1, #CartList1 {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+#CartLine1 .dbtn, #CartList1 .dbtn.dbtn1 {
+    color: #FFF;
+    font-size: 14px;
+    padding: 0px 10px;
+    margin: 0px;
+    width: 230px;
+    height: 30px;
+    line-height: 30px;
+}
+#CartList1 .dbtn.dbtn1.fillet_top, #CartList1 .dbtn.dbtn1.fillet_top:hover {
+    cursor: auto;
+    background-color: inherit;
+}
+#CartList1 .dbtn.dbtn1.fillet_bottom {
+    text-align: center;
+}
+#CartList1 { /*常駐清單*/
+    width: 250px;
+    line-height: 25px;
+    background: #BBB;
+}
+#CartList1 ol {
+    float: left;
+    width: 180px;
+    padding: 15px 15px 15px 35px;
+    margin: 10px;
+    color: #666666;
+    background: #FFF;
+}
+#CartList1 ol li {
+    padding: 0px;
+    margin: 0px;
+}
+#CartList1 ol li a {
+    display: block;
+}
+/****************************************************************Main*/
+#Main {
+}
+#Main > .block > div.fields_2 {
+    min-width: 300px;
+}
+#Main > div.fields_3, #Main .fields_3box > div.fields_3 {
+    min-width: 320px;
+}
+#Main .selecter div.fields_3 {
+    min-width: 300px;
+}
+/*Sidebar*/
+#Sidebar {
+}
+/*Content*/
+#Content {
+}
+/*Breadcrumb*/
+#Breadcrumb {
+    margin-bottom: 15px;
+}
+/*Map*/
+#Mapbox {
+    position: relative;
+}
+#Map {
+    position: relative;
+    z-index: 1;
+}
+#Map_btn {
+    position: absolute;
+    z-index: 2;
+    background: #000;
+    padding: 0px 5px;
+}
+#Map_btn a {
+    color: #FFF;
+}
+/*TabBox*/
+#pIndexTab .ui-tabs-nav {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #C8C8C8;
+    background: none;
+}
+#pIndexTab .ui-state-default {
+    width: 90px;
+    margin-right: 15px;
+    background: url(images/icons.png) no-repeat -105px -110px;
+}
+#pIndexTab .ui-state-default:last-child {
+    margin-right: 0px;
+}
+#pIndexTab .ui-tabs-selected {
+    width: 90px;
+    height: 35px;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 35px;
+    background: url(images/icons.png) no-repeat 0px -110px;
+}
+#pIndexTab .ui-tabs-selected a {
+    color: #FFF;
+}
+.ui-tabs-panel .fields_bg1 { /*高80px分隔一條線*/
+    background: url(images/line2.png);
+}
+.ui-tabs .fields_bg1 .fields_4 {
+    width: 235px;
+}
+.ui-tabs .fields_4 .block {
+    margin: 15px 5px 15px 0px;
+    height: 50px;
+    line-height: 25px;
+    overflow: hidden;
+    position: relative;
+}
+.ui-tabs .fields_4 .spot_arrow {
+    position: absolute;
+    top: 18px;
+    right: 0px;
+    width: 5px;
+    height: 9px;
+    display: block;
+    background: url(images/icons.png) no-repeat -250px -30px;
+}
+.ui-tabs > .block { /*滿版tabs的Tabline外面包的block*/
+    margin-bottom: 0px;
+}
+.ui-tabs .fields_3box { /*三欄式資料列表列*/
+}
+.ui-tabs .fields_3box .fields_3 .block {
+    height: 230px;
+    margin: 20px 10px 5px 10px;
+}
+.ui-tabs .fields_3box.fields_h_s .block {
+    height: 170px;
+}
+.ui-tabs .fields_3box .fields_3 p {
+    margin: 5px 0px;
+    height: 75px;
+    line-height: 25px;
+    display: block;
+    overflow: hidden;
+}
+.ui-tabs .fields_3box .fields_4 {
+    width: 297px;
+    padding: 5px;
+    line-height: 22px;
+    border: 1px solid #C8C8C8;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+}
+.ui-tabs .fields_3box ul.list1 {
+    margin-top: 10px;
+}
+.ui-tabs .fields_3box.fields_h_s ul.list1 {
+    margin-top: 0px;
+}
+.ui-tabs .fields_3box ul.list1 li {
+    margin-right: 5px;
+}
+.ui-tabs .fields_2box { /*兩欄式資料列表列*/
+}
+.ui-tabs .fields_2box .fields_2 > .block {
+    padding: 14px;
+    margin: 20px 10px 5px 10px;
+}
+.ui-tabs .fields_2box .fields_2 {
+    min-width: 320px;
+}
+.ui-tabs .fields_2box .fields_2 ul.list1.float-r {
+    width: 270px;
+}
+.ui-tabs .fields_2box .fields_2 ul.list1 li {
+    margin-right: 5px;
+}
+.ui-tabs .fields_2box .fields_2 ul.list1 li a.icon {
+    padding-left: 24px;
+}
+.ui-tabs .fields_2box .fields_2 ul.list1 li:last-child {
+    margin-right: 0px;
+}
+.ui-tabs .img-s {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+}
+.ui-tabs .img-s img {
+    max-width: 45px;
+    max-height: 45px;
+}
+#TabBox1_content1, #TabBox1_content2, #TabBox1_content3, #TabBox2_content1, #TabBox2_content2, #TabBox2_content3 {
+    width: 100%;
+    float: left;
+    display: none;
+}
+.ui-tabs h5 > div, .ui-tabs h5 > a, .ui-tabs h5 > span {
+    position: absolute;
+    z-index: auto;
+    top: 0px;
+    width: 90px;
+    height: 35px;
+    display: block;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 35px;
+    background: url(images/icons.png) no-repeat 0px -110px;
+}
+#TabBox1_content1 h5 a {
+    left: 0px;
+}
+#TabBox1_content2 h5 a {
+    left: 105px;
+}
+#TabBox1_content3 h5 a {
+    left: 210px;
+}
+#TabBox2_contentbox h5 > div, #TabBox2_contentbox h5 > a, #TabBox2_contentbox h5 > span {
+    color: #000;
+    width: 102px;
+    background: url(images/icons.png) no-repeat -100px -520px;
+}
+#TabBox2_content1 h5 > span, #TabBox2_content1 h5 > div {
+    left: 0px;
+}
+#TabBox2_content2 h5 > span, #TabBox2_content2 h5 > div {
+    left: 98px;
+}
+#TabBox2_content3 h5 > span, #TabBox2_content3 h5 > div {
+    left: 198px;
+}
+#Main > .ui-tabs #TabBox2_content1 h5 > div {
+    left: 10px;
+}
+#Main > .ui-tabs #TabBox2_content2 h5 > div {
+    left: 108px;
+}
+#Main > .ui-tabs #TabBox2_content3 h5 > div {
+    left: 208px;
+}
+/*InfoBox*/
+#InfoBox {
+    position: absolute;
+    z-index: 4;
+    right: 0px;
+}
+#InfoBox_tabline, #InfoBox_contentbox h5 { /*InfoBox_tabline*/
+    width: 200px;
+    height: 31px;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+}
+#InfoBox_tab1, #InfoBox_tab2, #InfoBox_contentbox h5 {
+    width: 80px;
+    height: 31px;
+    padding: 0px 10px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#InfoBox_tab1 > div:after, #InfoBox_tab2 > div:after, #InfoBox_contentbox h5 > div:after {
+    content: ' ';
+    display: block;
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin: 6px 0px 0px 0px;
+}
+#InfoBox div.info_btn1:after {
+    background: url(images/icons.png) no-repeat -260px -25px;
+}
+#InfoBox div.info_btn2:after {
+    background: url(images/icons.png) no-repeat -280px -25px;
+}
+#InfoBox div.info_btn3:after {
+    background: url(images/icons.png) no-repeat -280px -45px;
+}
+#InfoBox div.info_btn4:after {
+    background: url(images/icons.png) no-repeat -210px -50px;
+}
+#InfoBox div.info_btn5:after {
+    background: url(images/icons.png) no-repeat -260px -45px;
+}
+#InfoBox_contentbox { /*InfoBox_contentbox*/
+    width: 200px;
+    background: #FFF;
+    line-height: 25px;
+}
+#InfoBox_content1, #InfoBox_content2 {
+    padding: 9px;
+    border: 1px solid #C8C8C8;
+    border-top: none;
+    display: none;
+    overflow: hidden;
+}
+#InfoBox h5 {
+    color: #000;
+    position: absolute;
+    line-height: 30px;
+    background: url(images/icons.png) no-repeat 0px -555px;
+}
+#InfoBox_content1 h5 {
+    top: 0px;
+    left: 0px;
+}
+#InfoBox_content2 h5 {
+    top: 0px;
+    left: 100px;
+}
+/****************************************************************Footer*/
+#Footer {
+    position: relative;
+    margin-bottom: 30px;
+}
+#Footer .line {
+    padding: 10px 0px;
+}
+#Footer p {
+    margin: 10px;
+}
+#Footer a.dbtn_top {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    padding: 0px 15px;
+    background: #FFF;
+    display: block;
+    border: 1px solid #CCC;
+    border-top: none;
+}
+#Footer a.dbtn_top:hover {
+    color: #A52C25;
+    text-decoration: none;
+}
+
+dl.topbox dd {
+    line-height: 25px;
+    margin-left: 100px;
+    padding: 7px;
+}
+
+dl.topbox dt {
+    padding: 7px;
+    background-color: #EEE;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+.popover-content p {
+    font-size: 14px;
+    white-space: pre-wrap;
+}
+
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; paddine; border: none; margin: 0; padding: 0; }

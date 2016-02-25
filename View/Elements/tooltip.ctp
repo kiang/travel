@@ -1,0 +1,1 @@
+<a href="#" class="olc-icon ui-icon-info" onclick="return false;" title="<?php echo $tipMessage; ?>"></a>
