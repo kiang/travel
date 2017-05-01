@@ -61,7 +61,7 @@ class TokenAuthenticate extends BaseAuthenticate {
 		return $this->getUser($request);
 	}
 
-	public function getUser($request) {
+	public function getUser(CakeRequest $request) {
 		// Find the token from the request
 		$token = ApiUtility::getRequestToken($request);
 		if (empty($token)) {

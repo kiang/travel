@@ -8,7 +8,7 @@
             You could share your travel itineraries here and interact with your friends through itineraries and points.</p>
     </div>
     <div class="fields_s">
-        <?php echo $this->Form->create('Member', array('action' => 'login', 'class' => 'form-inline')); ?>
+        <?php echo $this->Form->create('Member', array('url' => 'login', 'class' => 'form-inline')); ?>
         <dl class="list4">
             <dt class="bg_gary1">Login information</dt>
             <dd style="padding: 40px;">
