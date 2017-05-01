@@ -88,7 +88,7 @@ class GeneratorBehavior extends ModelBehavior {
  * @param array $settings See defaultSettings for configuration options
  * @return void
  */
-	function setup(&$Model, $settings = array()) {
+	function setup(Model $Model, $settings = array()) {
 		$settings = (array)$settings;
 		$this->settings[$Model->alias] = array_merge($this->_defaultSettings, $settings);
 	}
@@ -103,7 +103,7 @@ class GeneratorBehavior extends ModelBehavior {
  * @param boolean $created
  * @return boolean
  */
-	function afterSave(&$Model, $created) {
+	function afterSave(Model $Model, $created, $options = array()) {
 		$item = $Model->data[$Model->alias];
 
 		if (isset($item['dirname'], $item['basename'])) {

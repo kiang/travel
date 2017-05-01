@@ -54,7 +54,7 @@ class ScheduleDay extends AppModel {
         return true;
     }
 
-    function afterSave($created) {
+    function afterSave($created, $options = array()) {
         $scheduleId = isset($this->data['ScheduleDay']['schedule_id']) ?
                 $this->data['ScheduleDay']['schedule_id'] : $this->field('schedule_id');
         if ($created) {

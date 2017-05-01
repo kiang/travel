@@ -89,7 +89,7 @@ class GeocodableBehavior extends ModelBehavior {
 	 * @param object $model Model
 	 * @param array $settings Settings
 	 */
-	public function setup($model, $settings = array()) {
+	public function setup(Model $model, $settings = array()) {
 		if (!isset($this->settings[$model->alias])) {
 			$configured = Configure::read('Geocode');
 			if (!empty($configured)) {
@@ -161,7 +161,7 @@ class GeocodableBehavior extends ModelBehavior {
 	 * @param object $model Model using this behavior
 	 * @return bool true if the operation should continue, false if it should abort
 	 */
-	public function beforeSave($model) {
+	public function beforeSave(Model $model, $options = array()) {
 		$settings = $this->settings[$model->alias];
 		$latitudeField = $settings['fields']['latitude'];
 		$longitudeField = $settings['fields']['longitude'];

@@ -135,7 +135,7 @@ class Point extends AppModel {
         }
     }
 
-    function afterSave($created) {
+    function afterSave($created, $options = array()) {
         if (!empty($this->newAreaId)) {
             $areas = $this->Area->getPath($this->newAreaId, array('id'));
             $this->Area->updateAll(array('countPoint' => 'countPoint + 1'), array(

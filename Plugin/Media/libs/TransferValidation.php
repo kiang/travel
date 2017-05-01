@@ -87,7 +87,7 @@ class TransferValidation extends MediaValidation {
  *
  * @param mixed $check
  */
-	function uploadedFile($check) {
+	static function uploadedFile($check, $options = array()) {
 		return MediaValidation::file($check) && is_uploaded_file($check);
 	}
 

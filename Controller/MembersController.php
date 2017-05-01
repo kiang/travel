@@ -513,8 +513,8 @@ class MembersController extends AppController {
                 )
                     ));
             if (!empty($member)) {
-                App::uses('String', 'Utility');
-                $token = String::uuid();
+                App::uses('CakeText', 'Utility');
+                $token = CakeText::uuid();
                 if ($this->Member->save(array('Member' => array(
                                 'id' => $member['Member']['id'],
                                 'group_id' => $member['Member']['group_id'],
@@ -535,7 +535,7 @@ class MembersController extends AppController {
         if (in_array($lang, array('zh-tw', 'en-us'))) {
             $this->Session->write('Config.language', $lang);
         }
-        $this->redirect($this->referer());
+        $this->redirect('/');
     }
 
     public function app_init() {

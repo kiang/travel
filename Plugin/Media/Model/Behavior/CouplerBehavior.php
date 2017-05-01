@@ -79,7 +79,7 @@ class CouplerBehavior extends ModelBehavior {
  * @param array $settings See defaultSettings for configuration options
  * @return void
  */
-	function setup(&$Model, $settings = array()) {
+	function setup(Model $Model, $settings = array()) {
 		$this->settings[$Model->alias] = (array) $settings + $this->_defaultSettings;
 	}
 
@@ -100,7 +100,7 @@ class CouplerBehavior extends ModelBehavior {
  * @param Model $Model
  * @return boolean
  */
-	function beforeSave(&$Model) {
+	function beforeSave(Model $Model, $options = array()) {
 		if (!$Model->exists()) {
 			if (!isset($Model->data[$Model->alias]['file'])) {
 				//unset($Model->data[$Model->alias]);
@@ -166,7 +166,7 @@ class CouplerBehavior extends ModelBehavior {
  * @param boolean $cascade
  * @return boolean
  */
-	function beforeDelete(&$Model, $cascade = true) {
+	function beforeDelete(Model $Model, $cascade = true) {
 		extract($this->settings[$Model->alias]);
 
 		$result = $Model->find('first', array(
@@ -199,7 +199,7 @@ class CouplerBehavior extends ModelBehavior {
  * @param boolean $primary
  * @return array
  */
-	function afterFind(&$Model, $results, $primary = false) {
+	function afterFind(Model $Model, $results, $primary = false) {
 		if (empty($results)) {
 			return $results;
 		}

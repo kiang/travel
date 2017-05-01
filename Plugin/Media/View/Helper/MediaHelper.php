@@ -557,7 +557,7 @@ class MediaHelper extends AppHelper {
  * @param array $options
  * @return string
  */
-	function _parseAttributes($options) {
+	function _parseAttributes($options, $exclude = NULL, $insertBefore = ' ', $insertAfter = NULL) {
 		$attributes = array();
 		$minimizedAttributes = array('autoplay', 'controls', 'autobuffer', 'loop');
 

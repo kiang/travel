@@ -77,7 +77,7 @@ class MetaBehavior extends ModelBehavior {
  * @param array $settings See defaultSettings for configuration options
  * @return void
  */
-	function setup(&$Model, $settings = array()) {
+	function setup(Model $Model, $settings = array()) {
 		$this->settings[$Model->alias] = array_merge($this->_defaultSettings, (array)$settings);
 		$this->__cached[$Model->alias] = Cache::read('media_metadata_' . $Model->alias);
 	}
@@ -103,7 +103,7 @@ class MetaBehavior extends ModelBehavior {
  * @param Model $Model
  * @return boolean
  */
-	function beforeSave(&$Model) {
+	function beforeSave(Model $Model, $options = array()) {
 		if ($Model->exists() || !isset($Model->data[$Model->alias]['file'])) {
 			return true;
 		}
@@ -125,7 +125,7 @@ class MetaBehavior extends ModelBehavior {
  * @param boolean $primary
  * @return array
  */
-	function afterFind(&$Model, $results, $primary = false) {
+	function afterFind(Model $Model, $results, $primary = false) {
 		if (empty($results)) {
 			return $results;
 		}

@@ -83,7 +83,7 @@ class ScheduleLine extends AppModel {
         return $results;
     }
 
-    function afterSave($created) {
+    function afterSave($created, $options = array()) {
         if (!$this->disableSummary) {
             $this->updateScheduleDay();
         }

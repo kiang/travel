@@ -158,7 +158,7 @@ class Member extends AppModel {
         return true;
     }
 
-    function beforeSave($options) {
+    function beforeSave($options = array()) {
         if ($this->id && isset($this->data['Member']['nickname'])) {
             if ($this->data['Member']['nickname'] != $this->field('nickname')) {
                 $this->nickNameChanged = true;
@@ -180,7 +180,7 @@ class Member extends AppModel {
         return true;
     }
 
-    function afterSave($created) {
+    function afterSave($created, $options = array()) {
         if (!$created && $this->nickNameChanged) {
             $currentMember = $this->read(array('username', 'nickname'));
             if (empty($currentMember['Member']['nickname'])) {

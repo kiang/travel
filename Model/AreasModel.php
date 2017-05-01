@@ -11,7 +11,7 @@ class AreasModel extends AppModel {
         ),
     );
 
-    function afterSave($created) {
+    function afterSave($created, $options = array()) {
         if ($created) {
             $areas = $this->Area->getPath($this->data['AreasModel']['area_id'], array('id'));
             $this->Area->updateAll(array(
