@@ -249,7 +249,7 @@ class MembersController extends AppController {
     function buildAcl() {
         $log = array();
 
-        $aco = & $this->Acl->Aco;
+        $aco = $this->Acl->Aco;
         $root = $aco->node('controllers');
         if (!$root) {
             $aco->create(array('parent_id' => 0, 'model' => null, 'alias' => 'controllers'));
@@ -392,7 +392,7 @@ class MembersController extends AppController {
      */
     function _getPluginControllerNames() {
         App::uses('Folder', 'Utility');
-        $folder = & new Folder();
+        $folder = new Folder();
         $folder->cd(APP . 'plugins');
 
         // Get the list of plugins
